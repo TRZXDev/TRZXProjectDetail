@@ -7,130 +7,177 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12D2D3E294AC3FFC81443EE974EE95EB /* UIView+TRZX.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F83E8A47F51715094069D5D27658EF8 /* UIView+TRZX.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		13CA58AC6C1F0FEC0CFF8B47C90FE143 /* UITabBarController+TRZX.h in Headers */ = {isa = PBXBuildFile; fileRef = 6B029C18E65467A0C7C5BAEE4CFF3BD4 /* UITabBarController+TRZX.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B34D9D3036C056C54540C9CA594C28E /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 65CE1A72E2BE4C0BC21D715D9F60081A /* UINavigationController+FDFullscreenPopGesture.m */; };
-		24150595B87E7D6DC9A9C2C1554AF8B0 /* UIColor+APP.m in Sources */ = {isa = PBXBuildFile; fileRef = A49844B5A531FDD61B2D5ED886C3DA73 /* UIColor+APP.m */; };
-		41D191938AF5A6A6A9075A0AD4E350B9 /* UIImage+TRZX.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C640C5E93688020F183FAC4FDBC9650 /* UIImage+TRZX.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4B01C4E5F7DC72A85D7E03EFF40816AB /* UIColor+APP.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A78CB95D14EEC5232590EEA424FC138 /* UIColor+APP.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4DA54C075D5307D253B2741C32754C80 /* UINavigationController+TRZX.h in Headers */ = {isa = PBXBuildFile; fileRef = FD77803A95DA87C7AC5553BA882EF6FD /* UINavigationController+TRZX.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54135C1650E112D050985D45478BB812 /* UIFont+APP.h in Headers */ = {isa = PBXBuildFile; fileRef = 597D86B74D16C2A9530078A578C2ABBA /* UIFont+APP.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6391BFB3A44462889E162DCF3DE05DD6 /* Pods-TRZXProjectDetail-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D40460D7FF2447F57D8AAA17CD1368B /* Pods-TRZXProjectDetail-dummy.m */; };
-		6BABE2C144CD3814366FBA9E57F10FDD /* UIImage+TRZX.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B67F2077FA94F1CD1040B24D7F48854 /* UIImage+TRZX.m */; };
-		790C39D9F3A5B350C44698D92CB17962 /* UIViewController+TRZX.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DCE7655BEEDB6A0DF2F1B6D34DF05E5 /* UIViewController+TRZX.m */; };
-		7924E07192B355DAD451EB70D1B1F6C8 /* UIFont+APP.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D6600D52936F65775DFF4D66BFC1FD6 /* UIFont+APP.m */; };
-		88956EFD66A11FC953A311F89BB2495F /* UIView+TRZX.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BD57159AAA2A69DC49C7873587FA2C9 /* UIView+TRZX.m */; };
-		89E82DE177A1356E5819E9386FC09BF3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		9CE8EB584F32C682542BB4E9B635F5F2 /* UIViewController+TRZX.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B07FD409100B804E390C47D16F2C48C /* UIViewController+TRZX.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1C2EAAAAC6FB90B82C5472AF367D7ED /* CTMediator.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BF9FD97E3A65A6ACBAA5CB431622993 /* CTMediator.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B0261208DDDF4934C84C101B43083CF6 /* UINavigationController+TRZX.m in Sources */ = {isa = PBXBuildFile; fileRef = 554B52348A0D616CFB2003D03DE766FC /* UINavigationController+TRZX.m */; };
-		BA12508A8AB1751C10C6F6688DA577B1 /* TRZXKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B0CF8101D65DF4E846A51EFDFE058F5 /* TRZXKit-dummy.m */; };
-		BC1E27589EA0DF23F4799F7DDF150B8F /* UIViewController+APP.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D6E7A9A4E5481262756FFEE0AE7017F /* UIViewController+APP.m */; };
-		BE69401B031EC4FE58EC4C6C17B147D6 /* UIColor+TRZX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E779FB44F23F8D44F7548C7DAB0FF3F /* UIColor+TRZX.m */; };
-		BFA815C10111858A6FD3081333433127 /* UIViewController+BackButtonItemTitle.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EE0B2B2D76D105E026CA20F8A6B5440 /* UIViewController+BackButtonItemTitle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C48D3C60B75AE4EE715E1664726E0422 /* UIViewController+APP.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EC33D4871E48B3377E8C4445F6D9997 /* UIViewController+APP.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CC3C21D10081BED0F27ECF2E4122A790 /* UITabBarController+TRZX.m in Sources */ = {isa = PBXBuildFile; fileRef = CA707121AB1C3B311DDB9D6DA2443B8B /* UITabBarController+TRZX.m */; };
-		CCDBE82452A01E1C0FA7BF68B1CD37FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		CF3E13A423532992B41DE997C6DD9276 /* UINavigationController+FDFullscreenPopGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = DA9791E11850E53C44A4FEFE96BE1A30 /* UINavigationController+FDFullscreenPopGesture.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1A0EA01E704A225F0226886B13D12B9 /* CTMediator-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FF021F3547B5CC2EA5365EAE09544A8F /* CTMediator-dummy.m */; };
-		D913C929E36A88A920459CB7B4887A37 /* UIColor+TRZX.h in Headers */ = {isa = PBXBuildFile; fileRef = 456BC80F2B41B16C4BB61229B8A68026 /* UIColor+TRZX.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC4268338A1FF55A0DB862FEF01BA5F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		E31E47FEA473C44C4F1EAB1F56C44EC3 /* UIViewController+BackButtonItemTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 776EB6712CEE1BAC3E2475E708D29709 /* UIViewController+BackButtonItemTitle.m */; };
-		F0A974D75663AACCF158A394DBC37450 /* CTMediator.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A020F953D3D506EFAA953751CD46274 /* CTMediator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F5EDE45B0F09B08FACA9D7654CF70556 /* TRZXKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BC7C59E91766EFFA7E5F321B216E68E /* TRZXKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		00B18E9CF54F553C70FB185BE9547D84 /* UIViewController+TRZX.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CC336A85FDB3ABE9B5B0B9D314869AD /* UIViewController+TRZX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0279605A0301B0B3B3B267714A9AE43B /* UIView+TRZX.h in Headers */ = {isa = PBXBuildFile; fileRef = B9D76328B0D281DD2D6DC0ADB2AA2CE1 /* UIView+TRZX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		054A20492DE4C5615844FC673F5B1446 /* UITabBarController+TRZX.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FADFF18B28324CC18E7ABB4E042E7C0 /* UITabBarController+TRZX.m */; };
+		0887A17DD9DF1632570C94CA31CFB9E5 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = B42759947137F4FD6AEB4B8C533A8D0D /* MJProperty.m */; };
+		0E85339081A86C368B68CFDCF2663C35 /* UIViewController+TRZX.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C47DB169C131023513B9CADCF440983 /* UIViewController+TRZX.m */; };
+		1B52239818F04048F2521063DDC11527 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = D484C1CE00706DD035BA82B458A9D666 /* MJPropertyType.m */; };
+		1F8FEA93407CEC682A2C0C282CDEAD89 /* MJProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D710845FA64DDD61A064E7857E50098 /* MJProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		20C2948FA079BB87FF076B635D6C8265 /* UIViewController+BackButtonItemTitle.h in Headers */ = {isa = PBXBuildFile; fileRef = CF5B867E9E3C8BC83FF575A911D64D7D /* UIViewController+BackButtonItemTitle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2357DDC85500B4F45E37E411B596F562 /* NSObject+MJKeyValue.h in Headers */ = {isa = PBXBuildFile; fileRef = 10708C818E7E96F45861243E7FD03A48 /* NSObject+MJKeyValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		291C921496AD82E706A14DFC03AB7F3C /* UINavigationController+TRZX.m in Sources */ = {isa = PBXBuildFile; fileRef = C0C688AD14CBB7B67A8794A51018C71B /* UINavigationController+TRZX.m */; };
+		2E0368CB5E43DF5325FAD0D62C1402E4 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA151A5CF7DC394181AB05D670E7163 /* NSObject+MJCoding.m */; };
+		378B68D116872CE294940A50145933E2 /* TRZXKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 86A4FECFF543002A823DC8BD65803757 /* TRZXKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		384CF7F197671C618B8C3A9D1A295A3E /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 29E2688ED3FAA61306B1EE95844B3486 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		3A43C77515AEEA2795EA0261F530C34E /* UIColor+APP.m in Sources */ = {isa = PBXBuildFile; fileRef = 291292A6560B9BCB58198628F58F0824 /* UIColor+APP.m */; };
+		3D41E590C2D15195583D8070C49A765B /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = FA61328EBFE9075750695C586F4D9A81 /* NSObject+MJProperty.m */; };
+		3E90BE90C2E3F5F65A8383300CBAAC99 /* UINavigationController+FDFullscreenPopGesture.h in Headers */ = {isa = PBXBuildFile; fileRef = BEAD239C2BAF5E26D528F9E37E0B9873 /* UINavigationController+FDFullscreenPopGesture.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F72236BDC3C56EE2E581FD7C289E31B /* UIColor+TRZX.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F550413C18FBBC679A93989DC2CEB95 /* UIColor+TRZX.m */; };
+		41658388795753395BD8E1CA67E087C0 /* UITabBarController+TRZX.h in Headers */ = {isa = PBXBuildFile; fileRef = 57EE748F2AEBA222C8B17886C4F01908 /* UITabBarController+TRZX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C6BFB4C1F6CF71C99E1FB270F0FEDAF /* MJPropertyKey.h in Headers */ = {isa = PBXBuildFile; fileRef = 817C2CD316AB0CB0862A8BCDF4888BE5 /* MJPropertyKey.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CC9C69E797A8B66E96A7A1C1B1B51CC /* MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = 76902E72E2FC11F937ABFF400162E122 /* MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E38D41313B9420037871A67158DAD0F /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = C9C6E76F368B438F898A8628AC7FFB37 /* NSObject+MJKeyValue.m */; };
+		4F0107A7976BB48BBDCFF4742BBA39E6 /* MJExtension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90C55B3ED70064BE79C42B4EB8858397 /* MJExtension-dummy.m */; };
+		524943D518FCDFDFE1C4AB6F485314E1 /* UIImage+TRZX.h in Headers */ = {isa = PBXBuildFile; fileRef = 68144C2354362B81814A95DDE69431CF /* UIImage+TRZX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		52BA5ED3898FD3C7571E9B74782158A5 /* MJPropertyType.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C9DB32AAAE4E19AF86B10363C103E8C /* MJPropertyType.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FF387977BF2E2D05CD9978E0A83BE84 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		61B69DCB5CCD6280F5C6B8D820E61110 /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = D8CA4CFED2F1F2F07C0C5BD8E42C2551 /* NSObject+MJClass.m */; };
+		6236F5BE892AE65359762C80F03D31C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		6DA0591840DA8BCEAEE4B4AADAC91C22 /* UIViewController+APP.h in Headers */ = {isa = PBXBuildFile; fileRef = B8A6668ACB721AED593CC30648F7B798 /* UIViewController+APP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73BB9A857B98D8486BF0D1150DB676EF /* Pods-TRZXProjectDetail-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D40460D7FF2447F57D8AAA17CD1368B /* Pods-TRZXProjectDetail-dummy.m */; };
+		774BFE769BB534897F384F894EF4DC82 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B1B7F91D287E2EA9FE1AEBF46440EB2 /* NSString+MJExtension.m */; };
+		7B7B14CBC8583AEB08A35840020636D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		7CA11BC41C21F6B82772849779333413 /* UIViewController+APP.m in Sources */ = {isa = PBXBuildFile; fileRef = 202F2E341CBF0C881D076AD44AB0C7A1 /* UIViewController+APP.m */; };
+		80F0D2D73E4BFA85D98E6CCC269145E9 /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 029CA0A8DAA9D9AE4A35C4B5DF78BFDB /* MJPropertyKey.m */; };
+		92937DC066543122186195A2941D3C60 /* MJFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 97898C43454127FAD07C33E18A6FD5DE /* MJFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ED36D73584E73C391D18580D2ACED20 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AC7BAE11AB79C96F462478F82947BAD /* MJFoundation.m */; };
+		A56BCB1F105F0B479BFD0E14D48003C6 /* UIImage+TRZX.m in Sources */ = {isa = PBXBuildFile; fileRef = DE267D4C8485D9465FC7CB483DB5F8C0 /* UIImage+TRZX.m */; };
+		AD23BC7B1DA500A7150E9200C882678D /* UINavigationController+TRZX.h in Headers */ = {isa = PBXBuildFile; fileRef = 246BAD38776AEACE2E313061D10F8F06 /* UINavigationController+TRZX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD680D4A742F76FCE9211342DD907EB1 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = D47146FC7FF3A9B8A37BBD8ABD47D509 /* MJExtensionConst.m */; };
+		AF46786B65D4C458DC9A555D4B1FF62A /* UIColor+TRZX.h in Headers */ = {isa = PBXBuildFile; fileRef = E0481F42EDD1B755667B544691090CAA /* UIColor+TRZX.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B174B4E531B4D6C5998142928F726930 /* UIView+TRZX.m in Sources */ = {isa = PBXBuildFile; fileRef = D67FCD12ABAA3CF2EC88A3C431BDB5C0 /* UIView+TRZX.m */; };
+		B915E3CFDFBA7B99411BC5430162868F /* NSObject+MJClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 43EB5F049275494ED67807CC34F1D29E /* NSObject+MJClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C6151DA58D9FB893088B2A1F2022D015 /* UIViewController+BackButtonItemTitle.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D68FAF26CC5E5A6AB09A341E7EC3388 /* UIViewController+BackButtonItemTitle.m */; };
+		CBA073485222F5F656AAF745EB499742 /* NSObject+MJCoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 4892488E0210CCCA271E1BFBF0B3F765 /* NSObject+MJCoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D7BF4DBA76F12C797027E90648D9AEE0 /* MJExtensionConst.h in Headers */ = {isa = PBXBuildFile; fileRef = B71C9668CA730452732B7BEBD9AA8A9B /* MJExtensionConst.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBDCE948DF1D74806D9D319F636A0E8B /* NSString+MJExtension.h in Headers */ = {isa = PBXBuildFile; fileRef = BA50EC57BA130021D5DFE84F879AA19B /* NSString+MJExtension.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD0AA9E8B308E45F90AD7A01F8BBC4DC /* NSObject+MJProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 6583447F15DA195C54BFD0BF690E08FE /* NSObject+MJProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE2D922B297F103B9A4CFF239C55B075 /* UIColor+APP.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F5CCA438E75DE6E98E1899A446C5D10 /* UIColor+APP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6C984EB9DDEE999D957BD9ABC636794 /* TRZXKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5314291EA996AB0F56DB8EAA290B80F8 /* TRZXKit-dummy.m */; };
+		F0600429940C6B655B15FD8CBFA64C12 /* UIFont+APP.m in Sources */ = {isa = PBXBuildFile; fileRef = 94441DEC8EC8FCE40051FE651B40F2FB /* UIFont+APP.m */; };
+		FE5C4819BD7E7850525AF83537BD65D1 /* UIFont+APP.h in Headers */ = {isa = PBXBuildFile; fileRef = 65D2DC5857F0754B0BD78CB6C1B6C739 /* UIFont+APP.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1B3789A030FAE94DED3C935E268FFDDA /* PBXContainerItemProxy */ = {
+		4A6E0ABE39E9C73205ACA25A359B8267 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E860DBFDF4A7872F6049CBAEAA721AD9;
-			remoteInfo = CTMediator;
+			remoteGlobalIDString = A316B54C67E947D23CECD230FA5BFAEF;
+			remoteInfo = MJExtension;
 		};
-		FD58F7738D81E5FA60AFCFE7A52AFF17 /* PBXContainerItemProxy */ = {
+		50B293D94F858BE5EEA4B82039DBE165 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1FE4737471FE6D962764FE45CEA98847;
+			remoteGlobalIDString = FBDEC90CFCEBFB9D43DEFAD3BA216DA3;
 			remoteInfo = TRZXKit;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0BC7C59E91766EFFA7E5F321B216E68E /* TRZXKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRZXKit.h; path = TRZXKit/TRZXKit/TRZXKit.h; sourceTree = "<group>"; };
-		0DCE7655BEEDB6A0DF2F1B6D34DF05E5 /* UIViewController+TRZX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TRZX.m"; path = "TRZXKit/TRZXKit/UIViewController+TRZX.m"; sourceTree = "<group>"; };
+		029CA0A8DAA9D9AE4A35C4B5DF78BFDB /* MJPropertyKey.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJPropertyKey.m; path = MJExtension/MJPropertyKey.m; sourceTree = "<group>"; };
+		08757240AF14904F6F146674ABC37D15 /* MJExtension.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MJExtension.xcconfig; sourceTree = "<group>"; };
+		0CC336A85FDB3ABE9B5B0B9D314869AD /* UIViewController+TRZX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TRZX.h"; path = "TRZXKit/TRZXKit/UIViewController+TRZX.h"; sourceTree = "<group>"; };
+		0D710845FA64DDD61A064E7857E50098 /* MJProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJProperty.h; path = MJExtension/MJProperty.h; sourceTree = "<group>"; };
 		0F4974CD2CA5416BACA242E307678CF5 /* Pods-TRZXProjectDetail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TRZXProjectDetail.debug.xcconfig"; sourceTree = "<group>"; };
-		1B0CF8101D65DF4E846A51EFDFE058F5 /* TRZXKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TRZXKit-dummy.m"; sourceTree = "<group>"; };
-		1B67F2077FA94F1CD1040B24D7F48854 /* UIImage+TRZX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+TRZX.m"; path = "TRZXKit/TRZXKit/UIImage+TRZX.m"; sourceTree = "<group>"; };
-		1EE0B2B2D76D105E026CA20F8A6B5440 /* UIViewController+BackButtonItemTitle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+BackButtonItemTitle.h"; path = "TRZXKit/TRZXKit/UIViewController+BackButtonItemTitle.h"; sourceTree = "<group>"; };
+		10708C818E7E96F45861243E7FD03A48 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJKeyValue.h"; path = "MJExtension/NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		1C9DB32AAAE4E19AF86B10363C103E8C /* MJPropertyType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJPropertyType.h; path = MJExtension/MJPropertyType.h; sourceTree = "<group>"; };
+		1FADFF18B28324CC18E7ABB4E042E7C0 /* UITabBarController+TRZX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITabBarController+TRZX.m"; path = "TRZXKit/TRZXKit/UITabBarController+TRZX.m"; sourceTree = "<group>"; };
+		202F2E341CBF0C881D076AD44AB0C7A1 /* UIViewController+APP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+APP.m"; path = "TRZXKit/TRZXKit/UIViewController+APP.m"; sourceTree = "<group>"; };
+		246BAD38776AEACE2E313061D10F8F06 /* UINavigationController+TRZX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+TRZX.h"; path = "TRZXKit/TRZXKit/UINavigationController+TRZX.h"; sourceTree = "<group>"; };
 		26B0612453DE680C2B155B9E8C9A69F2 /* Pods-TRZXProjectDetail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TRZXProjectDetail.release.xcconfig"; sourceTree = "<group>"; };
-		2A020F953D3D506EFAA953751CD46274 /* CTMediator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CTMediator.h; path = CTMediator/CTMediator/CTMediator.h; sourceTree = "<group>"; };
-		2C640C5E93688020F183FAC4FDBC9650 /* UIImage+TRZX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+TRZX.h"; path = "TRZXKit/TRZXKit/UIImage+TRZX.h"; sourceTree = "<group>"; };
+		291292A6560B9BCB58198628F58F0824 /* UIColor+APP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+APP.m"; path = "TRZXKit/TRZXKit/UIColor+APP.m"; sourceTree = "<group>"; };
+		29E2688ED3FAA61306B1EE95844B3486 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+FDFullscreenPopGesture.m"; path = "TRZXKit/TRZXKit/UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
 		2DE71B418BCD4BCD71B46A90C557C5E9 /* Pods-TRZXProjectDetail-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TRZXProjectDetail-acknowledgements.markdown"; sourceTree = "<group>"; };
-		34A5BA32793DE6AC06C6272728ABE6AB /* libTRZXKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTRZXKit.a; path = libTRZXKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		3A78CB95D14EEC5232590EEA424FC138 /* UIColor+APP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+APP.h"; path = "TRZXKit/TRZXKit/UIColor+APP.h"; sourceTree = "<group>"; };
+		3AC7BAE11AB79C96F462478F82947BAD /* MJFoundation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJFoundation.m; path = MJExtension/MJFoundation.m; sourceTree = "<group>"; };
+		3B1B7F91D287E2EA9FE1AEBF46440EB2 /* NSString+MJExtension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+MJExtension.m"; path = "MJExtension/NSString+MJExtension.m"; sourceTree = "<group>"; };
 		3D40460D7FF2447F57D8AAA17CD1368B /* Pods-TRZXProjectDetail-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TRZXProjectDetail-dummy.m"; sourceTree = "<group>"; };
-		3D6E7A9A4E5481262756FFEE0AE7017F /* UIViewController+APP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+APP.m"; path = "TRZXKit/TRZXKit/UIViewController+APP.m"; sourceTree = "<group>"; };
-		42035F25C11FA537A273E72F90B9CA72 /* CTMediator-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CTMediator-prefix.pch"; sourceTree = "<group>"; };
-		456BC80F2B41B16C4BB61229B8A68026 /* UIColor+TRZX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+TRZX.h"; path = "TRZXKit/TRZXKit/UIColor+TRZX.h"; sourceTree = "<group>"; };
-		4BD57159AAA2A69DC49C7873587FA2C9 /* UIView+TRZX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TRZX.m"; path = "TRZXKit/TRZXKit/UIView+TRZX.m"; sourceTree = "<group>"; };
-		554B52348A0D616CFB2003D03DE766FC /* UINavigationController+TRZX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+TRZX.m"; path = "TRZXKit/TRZXKit/UINavigationController+TRZX.m"; sourceTree = "<group>"; };
-		597D86B74D16C2A9530078A578C2ABBA /* UIFont+APP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+APP.h"; path = "TRZXKit/TRZXKit/UIFont+APP.h"; sourceTree = "<group>"; };
-		5B07FD409100B804E390C47D16F2C48C /* UIViewController+TRZX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+TRZX.h"; path = "TRZXKit/TRZXKit/UIViewController+TRZX.h"; sourceTree = "<group>"; };
-		5E779FB44F23F8D44F7548C7DAB0FF3F /* UIColor+TRZX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+TRZX.m"; path = "TRZXKit/TRZXKit/UIColor+TRZX.m"; sourceTree = "<group>"; };
-		65CE1A72E2BE4C0BC21D715D9F60081A /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+FDFullscreenPopGesture.m"; path = "TRZXKit/TRZXKit/UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
-		6B029C18E65467A0C7C5BAEE4CFF3BD4 /* UITabBarController+TRZX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITabBarController+TRZX.h"; path = "TRZXKit/TRZXKit/UITabBarController+TRZX.h"; sourceTree = "<group>"; };
+		43EB5F049275494ED67807CC34F1D29E /* NSObject+MJClass.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJClass.h"; path = "MJExtension/NSObject+MJClass.h"; sourceTree = "<group>"; };
+		4892488E0210CCCA271E1BFBF0B3F765 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJCoding.h"; path = "MJExtension/NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		4C47DB169C131023513B9CADCF440983 /* UIViewController+TRZX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+TRZX.m"; path = "TRZXKit/TRZXKit/UIViewController+TRZX.m"; sourceTree = "<group>"; };
+		4D68FAF26CC5E5A6AB09A341E7EC3388 /* UIViewController+BackButtonItemTitle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+BackButtonItemTitle.m"; path = "TRZXKit/TRZXKit/UIViewController+BackButtonItemTitle.m"; sourceTree = "<group>"; };
+		5314291EA996AB0F56DB8EAA290B80F8 /* TRZXKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TRZXKit-dummy.m"; sourceTree = "<group>"; };
+		57EE748F2AEBA222C8B17886C4F01908 /* UITabBarController+TRZX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITabBarController+TRZX.h"; path = "TRZXKit/TRZXKit/UITabBarController+TRZX.h"; sourceTree = "<group>"; };
+		5E30C5BC507B7681B706CE7A0EBA1B80 /* TRZXKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TRZXKit-prefix.pch"; sourceTree = "<group>"; };
+		628D70920525643897EE49DDD3E59641 /* MJExtension-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MJExtension-prefix.pch"; sourceTree = "<group>"; };
+		6583447F15DA195C54BFD0BF690E08FE /* NSObject+MJProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+MJProperty.h"; path = "MJExtension/NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		65D2DC5857F0754B0BD78CB6C1B6C739 /* UIFont+APP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+APP.h"; path = "TRZXKit/TRZXKit/UIFont+APP.h"; sourceTree = "<group>"; };
+		68144C2354362B81814A95DDE69431CF /* UIImage+TRZX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+TRZX.h"; path = "TRZXKit/TRZXKit/UIImage+TRZX.h"; sourceTree = "<group>"; };
 		6CAAE46169FE0E20F7020A2DE503F42F /* Pods-TRZXProjectDetail-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TRZXProjectDetail-resources.sh"; sourceTree = "<group>"; };
-		6D6600D52936F65775DFF4D66BFC1FD6 /* UIFont+APP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+APP.m"; path = "TRZXKit/TRZXKit/UIFont+APP.m"; sourceTree = "<group>"; };
-		6EC33D4871E48B3377E8C4445F6D9997 /* UIViewController+APP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+APP.h"; path = "TRZXKit/TRZXKit/UIViewController+APP.h"; sourceTree = "<group>"; };
 		6ECE7C691C4BE61BB67D030B21DBCDD3 /* Pods-TRZXProjectDetail-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TRZXProjectDetail-acknowledgements.plist"; sourceTree = "<group>"; };
-		738C083D1D5F2542C5B000757FF56F88 /* TRZXKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TRZXKit-prefix.pch"; sourceTree = "<group>"; };
-		7602A1D1EEEED75CD0ADD2AF64FBC5BF /* TRZXKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TRZXKit.xcconfig; sourceTree = "<group>"; };
-		776EB6712CEE1BAC3E2475E708D29709 /* UIViewController+BackButtonItemTitle.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+BackButtonItemTitle.m"; path = "TRZXKit/TRZXKit/UIViewController+BackButtonItemTitle.m"; sourceTree = "<group>"; };
-		8F83E8A47F51715094069D5D27658EF8 /* UIView+TRZX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TRZX.h"; path = "TRZXKit/TRZXKit/UIView+TRZX.h"; sourceTree = "<group>"; };
+		6F550413C18FBBC679A93989DC2CEB95 /* UIColor+TRZX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+TRZX.m"; path = "TRZXKit/TRZXKit/UIColor+TRZX.m"; sourceTree = "<group>"; };
+		6F5CCA438E75DE6E98E1899A446C5D10 /* UIColor+APP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+APP.h"; path = "TRZXKit/TRZXKit/UIColor+APP.h"; sourceTree = "<group>"; };
+		76902E72E2FC11F937ABFF400162E122 /* MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJExtension.h; path = MJExtension/MJExtension.h; sourceTree = "<group>"; };
+		817C2CD316AB0CB0862A8BCDF4888BE5 /* MJPropertyKey.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJPropertyKey.h; path = MJExtension/MJPropertyKey.h; sourceTree = "<group>"; };
+		86A4FECFF543002A823DC8BD65803757 /* TRZXKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TRZXKit.h; path = TRZXKit/TRZXKit/TRZXKit.h; sourceTree = "<group>"; };
+		8FA151A5CF7DC394181AB05D670E7163 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJCoding.m"; path = "MJExtension/NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		90C55B3ED70064BE79C42B4EB8858397 /* MJExtension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MJExtension-dummy.m"; sourceTree = "<group>"; };
 		91167526D0A2D56B99FA95A576669538 /* Pods-TRZXProjectDetail-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TRZXProjectDetail-frameworks.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9BF9FD97E3A65A6ACBAA5CB431622993 /* CTMediator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CTMediator.m; path = CTMediator/CTMediator/CTMediator.m; sourceTree = "<group>"; };
-		A49844B5A531FDD61B2D5ED886C3DA73 /* UIColor+APP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+APP.m"; path = "TRZXKit/TRZXKit/UIColor+APP.m"; sourceTree = "<group>"; };
-		A5004A507B046BE98235A8DC74376795 /* libPods-TRZXProjectDetail.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TRZXProjectDetail.a"; path = "libPods-TRZXProjectDetail.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA0B079CCF0051986B62F99448DF3E59 /* CTMediator.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CTMediator.xcconfig; sourceTree = "<group>"; };
-		CA707121AB1C3B311DDB9D6DA2443B8B /* UITabBarController+TRZX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITabBarController+TRZX.m"; path = "TRZXKit/TRZXKit/UITabBarController+TRZX.m"; sourceTree = "<group>"; };
+		94441DEC8EC8FCE40051FE651B40F2FB /* UIFont+APP.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+APP.m"; path = "TRZXKit/TRZXKit/UIFont+APP.m"; sourceTree = "<group>"; };
+		97898C43454127FAD07C33E18A6FD5DE /* MJFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJFoundation.h; path = MJExtension/MJFoundation.h; sourceTree = "<group>"; };
+		B42759947137F4FD6AEB4B8C533A8D0D /* MJProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJProperty.m; path = MJExtension/MJProperty.m; sourceTree = "<group>"; };
+		B71C9668CA730452732B7BEBD9AA8A9B /* MJExtensionConst.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MJExtensionConst.h; path = MJExtension/MJExtensionConst.h; sourceTree = "<group>"; };
+		B8A6668ACB721AED593CC30648F7B798 /* UIViewController+APP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+APP.h"; path = "TRZXKit/TRZXKit/UIViewController+APP.h"; sourceTree = "<group>"; };
+		B9D76328B0D281DD2D6DC0ADB2AA2CE1 /* UIView+TRZX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+TRZX.h"; path = "TRZXKit/TRZXKit/UIView+TRZX.h"; sourceTree = "<group>"; };
+		BA50EC57BA130021D5DFE84F879AA19B /* NSString+MJExtension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+MJExtension.h"; path = "MJExtension/NSString+MJExtension.h"; sourceTree = "<group>"; };
+		BEAD239C2BAF5E26D528F9E37E0B9873 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+FDFullscreenPopGesture.h"; path = "TRZXKit/TRZXKit/UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
+		C0C688AD14CBB7B67A8794A51018C71B /* UINavigationController+TRZX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+TRZX.m"; path = "TRZXKit/TRZXKit/UINavigationController+TRZX.m"; sourceTree = "<group>"; };
+		C9C6E76F368B438F898A8628AC7FFB37 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJKeyValue.m"; path = "MJExtension/NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		DA9791E11850E53C44A4FEFE96BE1A30 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+FDFullscreenPopGesture.h"; path = "TRZXKit/TRZXKit/UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
-		E1E14C615BAE25E3E47FDB3A9DA9878E /* libCTMediator.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libCTMediator.a; path = libCTMediator.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		FD77803A95DA87C7AC5553BA882EF6FD /* UINavigationController+TRZX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+TRZX.h"; path = "TRZXKit/TRZXKit/UINavigationController+TRZX.h"; sourceTree = "<group>"; };
-		FF021F3547B5CC2EA5365EAE09544A8F /* CTMediator-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CTMediator-dummy.m"; sourceTree = "<group>"; };
+		CF5B867E9E3C8BC83FF575A911D64D7D /* UIViewController+BackButtonItemTitle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+BackButtonItemTitle.h"; path = "TRZXKit/TRZXKit/UIViewController+BackButtonItemTitle.h"; sourceTree = "<group>"; };
+		D47146FC7FF3A9B8A37BBD8ABD47D509 /* MJExtensionConst.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJExtensionConst.m; path = MJExtension/MJExtensionConst.m; sourceTree = "<group>"; };
+		D484C1CE00706DD035BA82B458A9D666 /* MJPropertyType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MJPropertyType.m; path = MJExtension/MJPropertyType.m; sourceTree = "<group>"; };
+		D67FCD12ABAA3CF2EC88A3C431BDB5C0 /* UIView+TRZX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+TRZX.m"; path = "TRZXKit/TRZXKit/UIView+TRZX.m"; sourceTree = "<group>"; };
+		D8CA4CFED2F1F2F07C0C5BD8E42C2551 /* NSObject+MJClass.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJClass.m"; path = "MJExtension/NSObject+MJClass.m"; sourceTree = "<group>"; };
+		DC4AD759FC55AB9A21E862F9C3989767 /* TRZXKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TRZXKit.xcconfig; sourceTree = "<group>"; };
+		DE267D4C8485D9465FC7CB483DB5F8C0 /* UIImage+TRZX.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+TRZX.m"; path = "TRZXKit/TRZXKit/UIImage+TRZX.m"; sourceTree = "<group>"; };
+		E0481F42EDD1B755667B544691090CAA /* UIColor+TRZX.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+TRZX.h"; path = "TRZXKit/TRZXKit/UIColor+TRZX.h"; sourceTree = "<group>"; };
+		E4809BD6F7604545E591A4AC40739155 /* libPods-TRZXProjectDetail.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TRZXProjectDetail.a"; path = "libPods-TRZXProjectDetail.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E65781C6FC40E50983E94D6F635C9014 /* libTRZXKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libTRZXKit.a; path = libTRZXKit.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E994BE58B9F505089A230F4756B248E4 /* libMJExtension.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libMJExtension.a; path = libMJExtension.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA61328EBFE9075750695C586F4D9A81 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+MJProperty.m"; path = "MJExtension/NSObject+MJProperty.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2B1D7C1E7B0E9ADEE44142F391306C4A /* Frameworks */ = {
+		58B022FA4BE648B1A34B16081616E624 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCDBE82452A01E1C0FA7BF68B1CD37FE /* Foundation.framework in Frameworks */,
+				5FF387977BF2E2D05CD9978E0A83BE84 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE0A2C3FD20A2C402C180EF5EBFD8E32 /* Frameworks */ = {
+		B57134F14D0B782971053CD2EB92CC0C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89E82DE177A1356E5819E9386FC09BF3 /* Foundation.framework in Frameworks */,
+				7B7B14CBC8583AEB08A35840020636D1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FA27E7990AD81D1DC155549E1700C407 /* Frameworks */ = {
+		B6BD2C1EF492694D0A97DCBB128B972E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC4268338A1FF55A0DB862FEF01BA5F4 /* Foundation.framework in Frameworks */,
+				6236F5BE892AE65359762C80F03D31C2 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		002B3BBACDCA1C1BE685097B81781B9B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6A174EE48D63E0EEB86EE6A486B35D31 /* MJExtension */,
+				D54705320AAE817F3BA7761D9C92D912 /* TRZXKit */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		0847C646A617170524B74D04E79F9B84 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -154,36 +201,45 @@
 			path = "Target Support Files/Pods-TRZXProjectDetail";
 			sourceTree = "<group>";
 		};
-		1EF211D944F769FCE6FA5F2C9BB11B76 /* Products */ = {
+		24845B55FC3005BF698AD73EE6F12E4F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E1E14C615BAE25E3E47FDB3A9DA9878E /* libCTMediator.a */,
-				A5004A507B046BE98235A8DC74376795 /* libPods-TRZXProjectDetail.a */,
-				34A5BA32793DE6AC06C6272728ABE6AB /* libTRZXKit.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		30FF10A63678FCD40C1BC838D31BAC19 /* CTMediator */ = {
-			isa = PBXGroup;
-			children = (
-				2A020F953D3D506EFAA953751CD46274 /* CTMediator.h */,
-				9BF9FD97E3A65A6ACBAA5CB431622993 /* CTMediator.m */,
-				490D45432DE6976AF800E1FDD298D04C /* Support Files */,
-			);
-			name = CTMediator;
-			path = CTMediator;
-			sourceTree = "<group>";
-		};
-		490D45432DE6976AF800E1FDD298D04C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				AA0B079CCF0051986B62F99448DF3E59 /* CTMediator.xcconfig */,
-				FF021F3547B5CC2EA5365EAE09544A8F /* CTMediator-dummy.m */,
-				42035F25C11FA537A273E72F90B9CA72 /* CTMediator-prefix.pch */,
+				DC4AD759FC55AB9A21E862F9C3989767 /* TRZXKit.xcconfig */,
+				5314291EA996AB0F56DB8EAA290B80F8 /* TRZXKit-dummy.m */,
+				5E30C5BC507B7681B706CE7A0EBA1B80 /* TRZXKit-prefix.pch */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/CTMediator";
+			path = "../Target Support Files/TRZXKit";
+			sourceTree = "<group>";
+		};
+		6A174EE48D63E0EEB86EE6A486B35D31 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				76902E72E2FC11F937ABFF400162E122 /* MJExtension.h */,
+				B71C9668CA730452732B7BEBD9AA8A9B /* MJExtensionConst.h */,
+				D47146FC7FF3A9B8A37BBD8ABD47D509 /* MJExtensionConst.m */,
+				97898C43454127FAD07C33E18A6FD5DE /* MJFoundation.h */,
+				3AC7BAE11AB79C96F462478F82947BAD /* MJFoundation.m */,
+				0D710845FA64DDD61A064E7857E50098 /* MJProperty.h */,
+				B42759947137F4FD6AEB4B8C533A8D0D /* MJProperty.m */,
+				817C2CD316AB0CB0862A8BCDF4888BE5 /* MJPropertyKey.h */,
+				029CA0A8DAA9D9AE4A35C4B5DF78BFDB /* MJPropertyKey.m */,
+				1C9DB32AAAE4E19AF86B10363C103E8C /* MJPropertyType.h */,
+				D484C1CE00706DD035BA82B458A9D666 /* MJPropertyType.m */,
+				43EB5F049275494ED67807CC34F1D29E /* NSObject+MJClass.h */,
+				D8CA4CFED2F1F2F07C0C5BD8E42C2551 /* NSObject+MJClass.m */,
+				4892488E0210CCCA271E1BFBF0B3F765 /* NSObject+MJCoding.h */,
+				8FA151A5CF7DC394181AB05D670E7163 /* NSObject+MJCoding.m */,
+				10708C818E7E96F45861243E7FD03A48 /* NSObject+MJKeyValue.h */,
+				C9C6E76F368B438F898A8628AC7FFB37 /* NSObject+MJKeyValue.m */,
+				6583447F15DA195C54BFD0BF690E08FE /* NSObject+MJProperty.h */,
+				FA61328EBFE9075750695C586F4D9A81 /* NSObject+MJProperty.m */,
+				BA50EC57BA130021D5DFE84F879AA19B /* NSString+MJExtension.h */,
+				3B1B7F91D287E2EA9FE1AEBF46440EB2 /* NSString+MJExtension.m */,
+				7BB18C18601706173AFC55E0E068365C /* Support Files */,
+			);
+			name = MJExtension;
+			path = MJExtension;
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -194,58 +250,36 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		791833053AFC246766AC09CF77C9BE7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E994BE58B9F505089A230F4756B248E4 /* libMJExtension.a */,
+				E4809BD6F7604545E591A4AC40739155 /* libPods-TRZXProjectDetail.a */,
+				E65781C6FC40E50983E94D6F635C9014 /* libTRZXKit.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BB18C18601706173AFC55E0E068365C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				08757240AF14904F6F146674ABC37D15 /* MJExtension.xcconfig */,
+				90C55B3ED70064BE79C42B4EB8858397 /* MJExtension-dummy.m */,
+				628D70920525643897EE49DDD3E59641 /* MJExtension-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MJExtension";
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				D2E5AA55BF2B523754573D1B8578DBC2 /* Pods */,
-				1EF211D944F769FCE6FA5F2C9BB11B76 /* Products */,
+				002B3BBACDCA1C1BE685097B81781B9B /* Pods */,
+				791833053AFC246766AC09CF77C9BE7F /* Products */,
 				0847C646A617170524B74D04E79F9B84 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		8E92D9CA37DE9BA6E35BFBBEF2852622 /* TRZXKit */ = {
-			isa = PBXGroup;
-			children = (
-				0BC7C59E91766EFFA7E5F321B216E68E /* TRZXKit.h */,
-				3A78CB95D14EEC5232590EEA424FC138 /* UIColor+APP.h */,
-				A49844B5A531FDD61B2D5ED886C3DA73 /* UIColor+APP.m */,
-				456BC80F2B41B16C4BB61229B8A68026 /* UIColor+TRZX.h */,
-				5E779FB44F23F8D44F7548C7DAB0FF3F /* UIColor+TRZX.m */,
-				597D86B74D16C2A9530078A578C2ABBA /* UIFont+APP.h */,
-				6D6600D52936F65775DFF4D66BFC1FD6 /* UIFont+APP.m */,
-				2C640C5E93688020F183FAC4FDBC9650 /* UIImage+TRZX.h */,
-				1B67F2077FA94F1CD1040B24D7F48854 /* UIImage+TRZX.m */,
-				DA9791E11850E53C44A4FEFE96BE1A30 /* UINavigationController+FDFullscreenPopGesture.h */,
-				65CE1A72E2BE4C0BC21D715D9F60081A /* UINavigationController+FDFullscreenPopGesture.m */,
-				FD77803A95DA87C7AC5553BA882EF6FD /* UINavigationController+TRZX.h */,
-				554B52348A0D616CFB2003D03DE766FC /* UINavigationController+TRZX.m */,
-				6B029C18E65467A0C7C5BAEE4CFF3BD4 /* UITabBarController+TRZX.h */,
-				CA707121AB1C3B311DDB9D6DA2443B8B /* UITabBarController+TRZX.m */,
-				8F83E8A47F51715094069D5D27658EF8 /* UIView+TRZX.h */,
-				4BD57159AAA2A69DC49C7873587FA2C9 /* UIView+TRZX.m */,
-				6EC33D4871E48B3377E8C4445F6D9997 /* UIViewController+APP.h */,
-				3D6E7A9A4E5481262756FFEE0AE7017F /* UIViewController+APP.m */,
-				1EE0B2B2D76D105E026CA20F8A6B5440 /* UIViewController+BackButtonItemTitle.h */,
-				776EB6712CEE1BAC3E2475E708D29709 /* UIViewController+BackButtonItemTitle.m */,
-				5B07FD409100B804E390C47D16F2C48C /* UIViewController+TRZX.h */,
-				0DCE7655BEEDB6A0DF2F1B6D34DF05E5 /* UIViewController+TRZX.m */,
-				A0E6D7530D11B875FF05E839693F31D4 /* Support Files */,
-			);
-			name = TRZXKit;
-			path = TRZXKit;
-			sourceTree = "<group>";
-		};
-		A0E6D7530D11B875FF05E839693F31D4 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7602A1D1EEEED75CD0ADD2AF64FBC5BF /* TRZXKit.xcconfig */,
-				1B0CF8101D65DF4E846A51EFDFE058F5 /* TRZXKit-dummy.m */,
-				738C083D1D5F2542C5B000757FF56F88 /* TRZXKit-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/TRZXKit";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -256,55 +290,123 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D2E5AA55BF2B523754573D1B8578DBC2 /* Pods */ = {
+		D54705320AAE817F3BA7761D9C92D912 /* TRZXKit */ = {
 			isa = PBXGroup;
 			children = (
-				30FF10A63678FCD40C1BC838D31BAC19 /* CTMediator */,
-				8E92D9CA37DE9BA6E35BFBBEF2852622 /* TRZXKit */,
+				86A4FECFF543002A823DC8BD65803757 /* TRZXKit.h */,
+				6F5CCA438E75DE6E98E1899A446C5D10 /* UIColor+APP.h */,
+				291292A6560B9BCB58198628F58F0824 /* UIColor+APP.m */,
+				E0481F42EDD1B755667B544691090CAA /* UIColor+TRZX.h */,
+				6F550413C18FBBC679A93989DC2CEB95 /* UIColor+TRZX.m */,
+				65D2DC5857F0754B0BD78CB6C1B6C739 /* UIFont+APP.h */,
+				94441DEC8EC8FCE40051FE651B40F2FB /* UIFont+APP.m */,
+				68144C2354362B81814A95DDE69431CF /* UIImage+TRZX.h */,
+				DE267D4C8485D9465FC7CB483DB5F8C0 /* UIImage+TRZX.m */,
+				BEAD239C2BAF5E26D528F9E37E0B9873 /* UINavigationController+FDFullscreenPopGesture.h */,
+				29E2688ED3FAA61306B1EE95844B3486 /* UINavigationController+FDFullscreenPopGesture.m */,
+				246BAD38776AEACE2E313061D10F8F06 /* UINavigationController+TRZX.h */,
+				C0C688AD14CBB7B67A8794A51018C71B /* UINavigationController+TRZX.m */,
+				57EE748F2AEBA222C8B17886C4F01908 /* UITabBarController+TRZX.h */,
+				1FADFF18B28324CC18E7ABB4E042E7C0 /* UITabBarController+TRZX.m */,
+				B9D76328B0D281DD2D6DC0ADB2AA2CE1 /* UIView+TRZX.h */,
+				D67FCD12ABAA3CF2EC88A3C431BDB5C0 /* UIView+TRZX.m */,
+				B8A6668ACB721AED593CC30648F7B798 /* UIViewController+APP.h */,
+				202F2E341CBF0C881D076AD44AB0C7A1 /* UIViewController+APP.m */,
+				CF5B867E9E3C8BC83FF575A911D64D7D /* UIViewController+BackButtonItemTitle.h */,
+				4D68FAF26CC5E5A6AB09A341E7EC3388 /* UIViewController+BackButtonItemTitle.m */,
+				0CC336A85FDB3ABE9B5B0B9D314869AD /* UIViewController+TRZX.h */,
+				4C47DB169C131023513B9CADCF440983 /* UIViewController+TRZX.m */,
+				24845B55FC3005BF698AD73EE6F12E4F /* Support Files */,
 			);
-			name = Pods;
+			name = TRZXKit;
+			path = TRZXKit;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4928C77C7B4D975A0F53053D2A5A5CE9 /* Headers */ = {
+		31F4765CD338E6D652A4DF713467628A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0A974D75663AACCF158A394DBC37450 /* CTMediator.h in Headers */,
+				378B68D116872CE294940A50145933E2 /* TRZXKit.h in Headers */,
+				DE2D922B297F103B9A4CFF239C55B075 /* UIColor+APP.h in Headers */,
+				AF46786B65D4C458DC9A555D4B1FF62A /* UIColor+TRZX.h in Headers */,
+				FE5C4819BD7E7850525AF83537BD65D1 /* UIFont+APP.h in Headers */,
+				524943D518FCDFDFE1C4AB6F485314E1 /* UIImage+TRZX.h in Headers */,
+				3E90BE90C2E3F5F65A8383300CBAAC99 /* UINavigationController+FDFullscreenPopGesture.h in Headers */,
+				AD23BC7B1DA500A7150E9200C882678D /* UINavigationController+TRZX.h in Headers */,
+				41658388795753395BD8E1CA67E087C0 /* UITabBarController+TRZX.h in Headers */,
+				0279605A0301B0B3B3B267714A9AE43B /* UIView+TRZX.h in Headers */,
+				6DA0591840DA8BCEAEE4B4AADAC91C22 /* UIViewController+APP.h in Headers */,
+				20C2948FA079BB87FF076B635D6C8265 /* UIViewController+BackButtonItemTitle.h in Headers */,
+				00B18E9CF54F553C70FB185BE9547D84 /* UIViewController+TRZX.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4EB118C77F738EB1ACD82C6AE1FC1CA /* Headers */ = {
+		864D7FF60E899EA81A55C0B7F82FC174 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F5EDE45B0F09B08FACA9D7654CF70556 /* TRZXKit.h in Headers */,
-				4B01C4E5F7DC72A85D7E03EFF40816AB /* UIColor+APP.h in Headers */,
-				D913C929E36A88A920459CB7B4887A37 /* UIColor+TRZX.h in Headers */,
-				54135C1650E112D050985D45478BB812 /* UIFont+APP.h in Headers */,
-				41D191938AF5A6A6A9075A0AD4E350B9 /* UIImage+TRZX.h in Headers */,
-				CF3E13A423532992B41DE997C6DD9276 /* UINavigationController+FDFullscreenPopGesture.h in Headers */,
-				4DA54C075D5307D253B2741C32754C80 /* UINavigationController+TRZX.h in Headers */,
-				13CA58AC6C1F0FEC0CFF8B47C90FE143 /* UITabBarController+TRZX.h in Headers */,
-				12D2D3E294AC3FFC81443EE974EE95EB /* UIView+TRZX.h in Headers */,
-				C48D3C60B75AE4EE715E1664726E0422 /* UIViewController+APP.h in Headers */,
-				BFA815C10111858A6FD3081333433127 /* UIViewController+BackButtonItemTitle.h in Headers */,
-				9CE8EB584F32C682542BB4E9B635F5F2 /* UIViewController+TRZX.h in Headers */,
+				4CC9C69E797A8B66E96A7A1C1B1B51CC /* MJExtension.h in Headers */,
+				D7BF4DBA76F12C797027E90648D9AEE0 /* MJExtensionConst.h in Headers */,
+				92937DC066543122186195A2941D3C60 /* MJFoundation.h in Headers */,
+				1F8FEA93407CEC682A2C0C282CDEAD89 /* MJProperty.h in Headers */,
+				4C6BFB4C1F6CF71C99E1FB270F0FEDAF /* MJPropertyKey.h in Headers */,
+				52BA5ED3898FD3C7571E9B74782158A5 /* MJPropertyType.h in Headers */,
+				B915E3CFDFBA7B99411BC5430162868F /* NSObject+MJClass.h in Headers */,
+				CBA073485222F5F656AAF745EB499742 /* NSObject+MJCoding.h in Headers */,
+				2357DDC85500B4F45E37E411B596F562 /* NSObject+MJKeyValue.h in Headers */,
+				DD0AA9E8B308E45F90AD7A01F8BBC4DC /* NSObject+MJProperty.h in Headers */,
+				DBDCE948DF1D74806D9D319F636A0E8B /* NSString+MJExtension.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1FE4737471FE6D962764FE45CEA98847 /* TRZXKit */ = {
+		2ED8B30A62DED1CAB53A68E886C6B6C1 /* Pods-TRZXProjectDetail */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 84154815E2475A31FB15F3C27EBF57CC /* Build configuration list for PBXNativeTarget "TRZXKit" */;
+			buildConfigurationList = 23FC6ABA1241A535DF7D080BC6B62E12 /* Build configuration list for PBXNativeTarget "Pods-TRZXProjectDetail" */;
 			buildPhases = (
-				AADFE13F68277D92ECFD4C82A217E434 /* Sources */,
-				BE0A2C3FD20A2C402C180EF5EBFD8E32 /* Frameworks */,
-				D4EB118C77F738EB1ACD82C6AE1FC1CA /* Headers */,
+				0E67DFDA477579260452362CC61663A7 /* Sources */,
+				B6BD2C1EF492694D0A97DCBB128B972E /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				133931CFFFCFDBB70A49D3F4450C7C42 /* PBXTargetDependency */,
+				44F14D1C4C7E83542DE80D38E76590E2 /* PBXTargetDependency */,
+			);
+			name = "Pods-TRZXProjectDetail";
+			productName = "Pods-TRZXProjectDetail";
+			productReference = E4809BD6F7604545E591A4AC40739155 /* libPods-TRZXProjectDetail.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A316B54C67E947D23CECD230FA5BFAEF /* MJExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64EE246612F53A73C8FBFCEC3A61508A /* Build configuration list for PBXNativeTarget "MJExtension" */;
+			buildPhases = (
+				DE3C7F77ACB98406106FD6A2FC240643 /* Sources */,
+				B57134F14D0B782971053CD2EB92CC0C /* Frameworks */,
+				864D7FF60E899EA81A55C0B7F82FC174 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MJExtension;
+			productName = MJExtension;
+			productReference = E994BE58B9F505089A230F4756B248E4 /* libMJExtension.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		FBDEC90CFCEBFB9D43DEFAD3BA216DA3 /* TRZXKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 19FE06B6CCC931E02969449B666E4D0C /* Build configuration list for PBXNativeTarget "TRZXKit" */;
+			buildPhases = (
+				CF470063546BB33406A014F0163A3087 /* Sources */,
+				58B022FA4BE648B1A34B16081616E624 /* Frameworks */,
+				31F4765CD338E6D652A4DF713467628A /* Headers */,
 			);
 			buildRules = (
 			);
@@ -312,42 +414,7 @@
 			);
 			name = TRZXKit;
 			productName = TRZXKit;
-			productReference = 34A5BA32793DE6AC06C6272728ABE6AB /* libTRZXKit.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		E860DBFDF4A7872F6049CBAEAA721AD9 /* CTMediator */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 364F80A1A1AFF0BC44145F20DB8BE91E /* Build configuration list for PBXNativeTarget "CTMediator" */;
-			buildPhases = (
-				0B4A41E52F1E9F79967AB8F0A283C311 /* Sources */,
-				FA27E7990AD81D1DC155549E1700C407 /* Frameworks */,
-				4928C77C7B4D975A0F53053D2A5A5CE9 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = CTMediator;
-			productName = CTMediator;
-			productReference = E1E14C615BAE25E3E47FDB3A9DA9878E /* libCTMediator.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		EBAA6D9F9C02ACDF98C55188857A1452 /* Pods-TRZXProjectDetail */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 0F23FF42213B8C7218BE0AE5DD099C4A /* Build configuration list for PBXNativeTarget "Pods-TRZXProjectDetail" */;
-			buildPhases = (
-				C6ACF2E8485E466C8ADCB35E5DA751A9 /* Sources */,
-				2B1D7C1E7B0E9ADEE44142F391306C4A /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				BCDF39321A3C277DC20E7F78EB2E32F9 /* PBXTargetDependency */,
-				E14BA0DD7AC57E2E2906CEE3BF466A4A /* PBXTargetDependency */,
-			);
-			name = "Pods-TRZXProjectDetail";
-			productName = "Pods-TRZXProjectDetail";
-			productReference = A5004A507B046BE98235A8DC74376795 /* libPods-TRZXProjectDetail.a */;
+			productReference = E65781C6FC40E50983E94D6F635C9014 /* libTRZXKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -367,68 +434,77 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 1EF211D944F769FCE6FA5F2C9BB11B76 /* Products */;
+			productRefGroup = 791833053AFC246766AC09CF77C9BE7F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E860DBFDF4A7872F6049CBAEAA721AD9 /* CTMediator */,
-				EBAA6D9F9C02ACDF98C55188857A1452 /* Pods-TRZXProjectDetail */,
-				1FE4737471FE6D962764FE45CEA98847 /* TRZXKit */,
+				A316B54C67E947D23CECD230FA5BFAEF /* MJExtension */,
+				2ED8B30A62DED1CAB53A68E886C6B6C1 /* Pods-TRZXProjectDetail */,
+				FBDEC90CFCEBFB9D43DEFAD3BA216DA3 /* TRZXKit */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0B4A41E52F1E9F79967AB8F0A283C311 /* Sources */ = {
+		0E67DFDA477579260452362CC61663A7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1A0EA01E704A225F0226886B13D12B9 /* CTMediator-dummy.m in Sources */,
-				A1C2EAAAAC6FB90B82C5472AF367D7ED /* CTMediator.m in Sources */,
+				73BB9A857B98D8486BF0D1150DB676EF /* Pods-TRZXProjectDetail-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AADFE13F68277D92ECFD4C82A217E434 /* Sources */ = {
+		CF470063546BB33406A014F0163A3087 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA12508A8AB1751C10C6F6688DA577B1 /* TRZXKit-dummy.m in Sources */,
-				24150595B87E7D6DC9A9C2C1554AF8B0 /* UIColor+APP.m in Sources */,
-				BE69401B031EC4FE58EC4C6C17B147D6 /* UIColor+TRZX.m in Sources */,
-				7924E07192B355DAD451EB70D1B1F6C8 /* UIFont+APP.m in Sources */,
-				6BABE2C144CD3814366FBA9E57F10FDD /* UIImage+TRZX.m in Sources */,
-				1B34D9D3036C056C54540C9CA594C28E /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
-				B0261208DDDF4934C84C101B43083CF6 /* UINavigationController+TRZX.m in Sources */,
-				CC3C21D10081BED0F27ECF2E4122A790 /* UITabBarController+TRZX.m in Sources */,
-				88956EFD66A11FC953A311F89BB2495F /* UIView+TRZX.m in Sources */,
-				BC1E27589EA0DF23F4799F7DDF150B8F /* UIViewController+APP.m in Sources */,
-				E31E47FEA473C44C4F1EAB1F56C44EC3 /* UIViewController+BackButtonItemTitle.m in Sources */,
-				790C39D9F3A5B350C44698D92CB17962 /* UIViewController+TRZX.m in Sources */,
+				E6C984EB9DDEE999D957BD9ABC636794 /* TRZXKit-dummy.m in Sources */,
+				3A43C77515AEEA2795EA0261F530C34E /* UIColor+APP.m in Sources */,
+				3F72236BDC3C56EE2E581FD7C289E31B /* UIColor+TRZX.m in Sources */,
+				F0600429940C6B655B15FD8CBFA64C12 /* UIFont+APP.m in Sources */,
+				A56BCB1F105F0B479BFD0E14D48003C6 /* UIImage+TRZX.m in Sources */,
+				384CF7F197671C618B8C3A9D1A295A3E /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
+				291C921496AD82E706A14DFC03AB7F3C /* UINavigationController+TRZX.m in Sources */,
+				054A20492DE4C5615844FC673F5B1446 /* UITabBarController+TRZX.m in Sources */,
+				B174B4E531B4D6C5998142928F726930 /* UIView+TRZX.m in Sources */,
+				7CA11BC41C21F6B82772849779333413 /* UIViewController+APP.m in Sources */,
+				C6151DA58D9FB893088B2A1F2022D015 /* UIViewController+BackButtonItemTitle.m in Sources */,
+				0E85339081A86C368B68CFDCF2663C35 /* UIViewController+TRZX.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C6ACF2E8485E466C8ADCB35E5DA751A9 /* Sources */ = {
+		DE3C7F77ACB98406106FD6A2FC240643 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6391BFB3A44462889E162DCF3DE05DD6 /* Pods-TRZXProjectDetail-dummy.m in Sources */,
+				4F0107A7976BB48BBDCFF4742BBA39E6 /* MJExtension-dummy.m in Sources */,
+				AD680D4A742F76FCE9211342DD907EB1 /* MJExtensionConst.m in Sources */,
+				9ED36D73584E73C391D18580D2ACED20 /* MJFoundation.m in Sources */,
+				0887A17DD9DF1632570C94CA31CFB9E5 /* MJProperty.m in Sources */,
+				80F0D2D73E4BFA85D98E6CCC269145E9 /* MJPropertyKey.m in Sources */,
+				1B52239818F04048F2521063DDC11527 /* MJPropertyType.m in Sources */,
+				61B69DCB5CCD6280F5C6B8D820E61110 /* NSObject+MJClass.m in Sources */,
+				2E0368CB5E43DF5325FAD0D62C1402E4 /* NSObject+MJCoding.m in Sources */,
+				4E38D41313B9420037871A67158DAD0F /* NSObject+MJKeyValue.m in Sources */,
+				3D41E590C2D15195583D8070C49A765B /* NSObject+MJProperty.m in Sources */,
+				774BFE769BB534897F384F894EF4DC82 /* NSString+MJExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		BCDF39321A3C277DC20E7F78EB2E32F9 /* PBXTargetDependency */ = {
+		133931CFFFCFDBB70A49D3F4450C7C42 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = CTMediator;
-			target = E860DBFDF4A7872F6049CBAEAA721AD9 /* CTMediator */;
-			targetProxy = 1B3789A030FAE94DED3C935E268FFDDA /* PBXContainerItemProxy */;
+			name = MJExtension;
+			target = A316B54C67E947D23CECD230FA5BFAEF /* MJExtension */;
+			targetProxy = 4A6E0ABE39E9C73205ACA25A359B8267 /* PBXContainerItemProxy */;
 		};
-		E14BA0DD7AC57E2E2906CEE3BF466A4A /* PBXTargetDependency */ = {
+		44F14D1C4C7E83542DE80D38E76590E2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = TRZXKit;
-			target = 1FE4737471FE6D962764FE45CEA98847 /* TRZXKit */;
-			targetProxy = FD58F7738D81E5FA60AFCFE7A52AFF17 /* PBXContainerItemProxy */;
+			target = FBDEC90CFCEBFB9D43DEFAD3BA216DA3 /* TRZXKit */;
+			targetProxy = 50B293D94F858BE5EEA4B82039DBE165 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -477,9 +553,9 @@
 			};
 			name = Debug;
 		};
-		315647CE1391CB59AE89C2F357EF9EB5 /* Release */ = {
+		24455948D3A3C98235995A605DB59FFB /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 26B0612453DE680C2B155B9E8C9A69F2 /* Pods-TRZXProjectDetail.release.xcconfig */;
+			baseConfigurationReference = 08757240AF14904F6F146674ABC37D15 /* MJExtension.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -487,14 +563,14 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MACH_O_TYPE = staticlib;
+				GCC_PREFIX_HEADER = "Target Support Files/MJExtension/MJExtension-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -540,78 +616,9 @@
 			};
 			name = Release;
 		};
-		5E8E0DEBE27451B7389A4ED69266BB06 /* Release */ = {
+		4D34C4A48426E91B0F34B74A67D1722B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA0B079CCF0051986B62F99448DF3E59 /* CTMediator.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CTMediator/CTMediator-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		C3672147C5F7946D38243E4A02FE88DB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7602A1D1EEEED75CD0ADD2AF64FBC5BF /* TRZXKit.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TRZXKit/TRZXKit-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		DF434D1DD92CB9C730A6FD3A453B6374 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA0B079CCF0051986B62F99448DF3E59 /* CTMediator.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/CTMediator/CTMediator-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		E66608192EC6D4BF01EF6584DB4F9590 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7602A1D1EEEED75CD0ADD2AF64FBC5BF /* TRZXKit.xcconfig */;
+			baseConfigurationReference = DC4AD759FC55AB9A21E862F9C3989767 /* TRZXKit.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -632,7 +639,7 @@
 			};
 			name = Release;
 		};
-		F254CDD03EAF2DA374E200060A80AB14 /* Debug */ = {
+		6D502D7EBBAD3AE43DC19B312D763155 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0F4974CD2CA5416BACA242E307678CF5 /* Pods-TRZXProjectDetail.debug.xcconfig */;
 			buildSettings = {
@@ -655,14 +662,92 @@
 			};
 			name = Debug;
 		};
+		864257C72797C3D88C7F59CD746CD135 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08757240AF14904F6F146674ABC37D15 /* MJExtension.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MJExtension/MJExtension-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AB8E242A4DC78C3D1099C7BB7B747013 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC4AD759FC55AB9A21E862F9C3989767 /* TRZXKit.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/TRZXKit/TRZXKit-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		D45D68CFD38FC4E3239FAE6DCC185A48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26B0612453DE680C2B155B9E8C9A69F2 /* Pods-TRZXProjectDetail.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0F23FF42213B8C7218BE0AE5DD099C4A /* Build configuration list for PBXNativeTarget "Pods-TRZXProjectDetail" */ = {
+		19FE06B6CCC931E02969449B666E4D0C /* Build configuration list for PBXNativeTarget "TRZXKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F254CDD03EAF2DA374E200060A80AB14 /* Debug */,
-				315647CE1391CB59AE89C2F357EF9EB5 /* Release */,
+				AB8E242A4DC78C3D1099C7BB7B747013 /* Debug */,
+				4D34C4A48426E91B0F34B74A67D1722B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23FC6ABA1241A535DF7D080BC6B62E12 /* Build configuration list for PBXNativeTarget "Pods-TRZXProjectDetail" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D502D7EBBAD3AE43DC19B312D763155 /* Debug */,
+				D45D68CFD38FC4E3239FAE6DCC185A48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -676,20 +761,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		364F80A1A1AFF0BC44145F20DB8BE91E /* Build configuration list for PBXNativeTarget "CTMediator" */ = {
+		64EE246612F53A73C8FBFCEC3A61508A /* Build configuration list for PBXNativeTarget "MJExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DF434D1DD92CB9C730A6FD3A453B6374 /* Debug */,
-				5E8E0DEBE27451B7389A4ED69266BB06 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		84154815E2475A31FB15F3C27EBF57CC /* Build configuration list for PBXNativeTarget "TRZXKit" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C3672147C5F7946D38243E4A02FE88DB /* Debug */,
-				E66608192EC6D4BF01EF6584DB4F9590 /* Release */,
+				864257C72797C3D88C7F59CD746CD135 /* Debug */,
+				24455948D3A3C98235995A605DB59FFB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

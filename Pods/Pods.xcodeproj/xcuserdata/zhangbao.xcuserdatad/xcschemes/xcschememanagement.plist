@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CTMediator.xcscheme</key>
+		<key>MJExtension.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -22,17 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1FE4737471FE6D962764FE45CEA98847</key>
+		<key>2ED8B30A62DED1CAB53A68E886C6B6C1</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E860DBFDF4A7872F6049CBAEAA721AD9</key>
+		<key>A316B54C67E947D23CECD230FA5BFAEF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EBAA6D9F9C02ACDF98C55188857A1452</key>
+		<key>FBDEC90CFCEBFB9D43DEFAD3BA216DA3</key>
 		<dict>
 			<key>primary</key>
 			<true/>
