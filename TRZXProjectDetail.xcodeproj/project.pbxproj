@@ -15,6 +15,9 @@
 		181D82F71E67D5F200D756AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 181D82F51E67D5F200D756AC /* LaunchScreen.storyboard */; };
 		181D83021E67D5F200D756AC /* TRZXProjectDetailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D83011E67D5F200D756AC /* TRZXProjectDetailTests.m */; };
 		181D830D1E67D5F200D756AC /* TRZXProjectDetailUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 181D830C1E67D5F200D756AC /* TRZXProjectDetailUITests.m */; };
+		6D5999A11E67E0D100DCA317 /* Target_TRZXProjectDetail.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5999A01E67E0D100DCA317 /* Target_TRZXProjectDetail.m */; };
+		6D5999A41E67E15800DCA317 /* TRZXProjectDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5999A31E67E15800DCA317 /* TRZXProjectDetailViewController.m */; };
+		E84157524E9410D3848DBC29 /* libPods-TRZXProjectDetail.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68AD18CB5541FE9EE992CA94 /* libPods-TRZXProjectDetail.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		181D83081E67D5F200D756AC /* TRZXProjectDetailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRZXProjectDetailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		181D830C1E67D5F200D756AC /* TRZXProjectDetailUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRZXProjectDetailUITests.m; sourceTree = "<group>"; };
 		181D830E1E67D5F200D756AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		68AD18CB5541FE9EE992CA94 /* libPods-TRZXProjectDetail.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TRZXProjectDetail.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D59999F1E67E0D100DCA317 /* Target_TRZXProjectDetail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Target_TRZXProjectDetail.h; sourceTree = "<group>"; };
+		6D5999A01E67E0D100DCA317 /* Target_TRZXProjectDetail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Target_TRZXProjectDetail.m; sourceTree = "<group>"; };
+		6D5999A21E67E15800DCA317 /* TRZXProjectDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXProjectDetailViewController.h; sourceTree = "<group>"; };
+		6D5999A31E67E15800DCA317 /* TRZXProjectDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXProjectDetailViewController.m; sourceTree = "<group>"; };
+		B3EF3247441DFCB1250F6C3C /* Pods-TRZXProjectDetail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXProjectDetail.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXProjectDetail/Pods-TRZXProjectDetail.release.xcconfig"; sourceTree = "<group>"; };
+		CB85A213CD1F84676FBA3061 /* Pods-TRZXProjectDetail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXProjectDetail.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXProjectDetail/Pods-TRZXProjectDetail.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E84157524E9410D3848DBC29 /* libPods-TRZXProjectDetail.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +96,8 @@
 				181D83001E67D5F200D756AC /* TRZXProjectDetailTests */,
 				181D830B1E67D5F200D756AC /* TRZXProjectDetailUITests */,
 				181D82E51E67D5F200D756AC /* Products */,
+				6EB05E94BD1712FF17697AB7 /* Pods */,
+				4C0B058CBE2CAF97D4B793F7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,6 +114,7 @@
 		181D82E61E67D5F200D756AC /* TRZXProjectDetail */ = {
 			isa = PBXGroup;
 			children = (
+				181D831A1E67D71B00D756AC /* TRZXProjectDetail */,
 				181D82EA1E67D5F200D756AC /* AppDelegate.h */,
 				181D82EB1E67D5F200D756AC /* AppDelegate.m */,
 				181D82ED1E67D5F200D756AC /* ViewController.h */,
@@ -140,6 +154,34 @@
 			path = TRZXProjectDetailUITests;
 			sourceTree = "<group>";
 		};
+		181D831A1E67D71B00D756AC /* TRZXProjectDetail */ = {
+			isa = PBXGroup;
+			children = (
+				6D59999F1E67E0D100DCA317 /* Target_TRZXProjectDetail.h */,
+				6D5999A01E67E0D100DCA317 /* Target_TRZXProjectDetail.m */,
+				6D5999A21E67E15800DCA317 /* TRZXProjectDetailViewController.h */,
+				6D5999A31E67E15800DCA317 /* TRZXProjectDetailViewController.m */,
+			);
+			path = TRZXProjectDetail;
+			sourceTree = "<group>";
+		};
+		4C0B058CBE2CAF97D4B793F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				68AD18CB5541FE9EE992CA94 /* libPods-TRZXProjectDetail.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6EB05E94BD1712FF17697AB7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB85A213CD1F84676FBA3061 /* Pods-TRZXProjectDetail.debug.xcconfig */,
+				B3EF3247441DFCB1250F6C3C /* Pods-TRZXProjectDetail.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +189,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 181D83111E67D5F200D756AC /* Build configuration list for PBXNativeTarget "TRZXProjectDetail" */;
 			buildPhases = (
+				27174A2170225BB1D5CBFFCB /* [CP] Check Pods Manifest.lock */,
 				181D82E01E67D5F200D756AC /* Sources */,
 				181D82E11E67D5F200D756AC /* Frameworks */,
 				181D82E21E67D5F200D756AC /* Resources */,
+				EB1C39D0DA7286E8EB7ACA67 /* [CP] Embed Pods Frameworks */,
+				80D6C3FFE1830BF5D6AB76CD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -271,12 +316,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		27174A2170225BB1D5CBFFCB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		80D6C3FFE1830BF5D6AB76CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TRZXProjectDetail/Pods-TRZXProjectDetail-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB1C39D0DA7286E8EB7ACA67 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TRZXProjectDetail/Pods-TRZXProjectDetail-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		181D82E01E67D5F200D756AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D5999A41E67E15800DCA317 /* TRZXProjectDetailViewController.m in Sources */,
 				181D82EF1E67D5F200D756AC /* ViewController.m in Sources */,
+				6D5999A11E67E0D100DCA317 /* Target_TRZXProjectDetail.m in Sources */,
 				181D82EC1E67D5F200D756AC /* AppDelegate.m in Sources */,
 				181D82E91E67D5F200D756AC /* main.m in Sources */,
 			);
@@ -423,6 +518,7 @@
 		};
 		181D83121E67D5F200D756AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB85A213CD1F84676FBA3061 /* Pods-TRZXProjectDetail.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 487PQPPTGA;
@@ -435,6 +531,7 @@
 		};
 		181D83131E67D5F200D756AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3EF3247441DFCB1250F6C3C /* Pods-TRZXProjectDetail.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 487PQPPTGA;
@@ -514,6 +611,7 @@
 				181D83131E67D5F200D756AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		181D83141E67D5F200D756AC /* Build configuration list for PBXNativeTarget "TRZXProjectDetailTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +620,7 @@
 				181D83161E67D5F200D756AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		181D83171E67D5F200D756AC /* Build configuration list for PBXNativeTarget "TRZXProjectDetailUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +629,7 @@
 				181D83191E67D5F200D756AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

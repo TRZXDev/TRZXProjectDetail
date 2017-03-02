@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Target_TRZXProjectDetail.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,26 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [UIColor purpleColor];
+    
+    UILabel *projectListLabel = [[UILabel alloc] init];
+    projectListLabel.frame = self.view.bounds;
+    projectListLabel.text = @"项目列表";
+    projectListLabel.textAlignment = NSTextAlignmentCenter;
+    projectListLabel.font = [UIFont boldSystemFontOfSize:18];
+    projectListLabel.textColor = [UIColor cyanColor];
+    projectListLabel.userInteractionEnabled = NO;
+    
+    [self.view addSubview:projectListLabel];
+}
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+{
+    Target_TRZXProjectDetail *target = [Target_TRZXProjectDetail new];
+    UIViewController *projectDetail_vc = [target Action_ProjectDetailViewController:nil];
+    
+    [self presentViewController:projectDetail_vc animated:YES completion:nil];
 }
 
 
