@@ -7,7 +7,6 @@
 //
 
 #import "TRZXProjectDetailModel.h"
-#import <MJExtension/MJExtension.h>
 
 @implementation TRZXProjectDetailModel
 

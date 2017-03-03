@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Masonry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-TRZXProjectDetail.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -19,10 +24,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>YYText.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>2ED8B30A62DED1CAB53A68E886C6B6C1</key>
+		<key>6872D1CDB57A4A95AD86FA16CAD8BF37</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>70509D133F34209C6A04D223FBC14FF5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9DC8D9E02903E93BD0B2FEC9D846EA20</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -32,7 +52,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>FBDEC90CFCEBFB9D43DEFAD3BA216DA3</key>
+		<key>F2C77374B617E2C95DDD538DE8EC1BBD</key>
 		<dict>
 			<key>primary</key>
 			<true/>

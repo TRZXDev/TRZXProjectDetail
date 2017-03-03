@@ -37,7 +37,7 @@
     Target_TRZXProjectDetail *target = [Target_TRZXProjectDetail new];
     UIViewController *projectDetail_vc = [target Action_ProjectDetailViewController:nil];
     
-    [self presentViewController:projectDetail_vc animated:YES completion:nil];
+    [self.navigationController pushViewController:projectDetail_vc animated:YES];
 }
 
 
