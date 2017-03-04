@@ -1,8 +1,8 @@
 //
-//  TRZXProjectDetailFinancingInfoTableViewCell.h
+//  TRZXProjectDetailCommentTableViewCell.h
 //  TRZXProjectDetail
 //
-//  Created by zhangbao on 2017/3/3.
+//  Created by zhangbao on 2017/3/4.
 //  Copyright © 2017年 TRZX. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 @class TRZXProjectDetailModel;
 
-@interface TRZXProjectDetailFinancingInfoTableViewCell : UITableViewCell
+@interface TRZXProjectDetailCommentTableViewCell : UITableViewCell
 
 @property (nonatomic, strong) TRZXProjectDetailModel *model;
 @end

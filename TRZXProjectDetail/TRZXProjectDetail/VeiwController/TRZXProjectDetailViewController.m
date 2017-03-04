@@ -54,6 +54,10 @@ UITableViewDataSource
     
     [self receiveActions];
     
+    [self.projectDetailVM request:^{
+        [self.tableView reloadData];
+    }];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -110,17 +114,18 @@ UITableViewDataSource
 #pragma mark - <UITableViewDelegate/DataSource>
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return self.projectDetailVM.dataArray.count;
+    return self.projectDetailVM.cellArray.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.projectDetailVM.dataArray[section].count;
+    return self.projectDetailVM.cellArray[section].count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [self.projectDetailVM cellWithTableView:tableView indexPath:indexPath];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
 }
 
@@ -148,6 +153,9 @@ UITableViewDataSource
         // 自动计算cell高度
         _tableView.estimatedRowHeight = 80.0f;
         _tableView.rowHeight = UITableViewAutomaticDimension;
+        _tableView.estimatedSectionHeaderHeight = 80.0f;
+        _tableView.sectionFooterHeight = UITableViewAutomaticDimension;
+        // 去除cell选中效果
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         
         // 注册cell

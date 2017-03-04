@@ -48,15 +48,16 @@
         make.width.mas_equalTo(2);
     }];
     
+    [_leftTitleLabel setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
     [_leftTitleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.leftRedView.mas_right).offset(4);
         make.top.equalTo(self.contentView).offset(4);
         make.bottom.equalTo(self.contentView).offset(-10);
-        make.width.mas_equalTo(100);
+//        make.width.mas_equalTo(100);
     }];
     
     _rightInfoLabel.numberOfLines = 0;
-    [_rightInfoLabel setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisVertical];
+//    [_rightInfoLabel setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
     [_rightInfoLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(_leftTitleLabel.mas_right).offset(30);
         make.top.equalTo(self.contentView).offset(4);
@@ -69,22 +70,33 @@
 - (void)setModel:(TRZXProjectDetailModel *)model indexPath:(NSIndexPath *)indexPath
 {
     NSString *leftTitleString = @"";
+    NSString *rightInfoString = @"";
     
     switch (indexPath.row) {
         case 0:
             leftTitleString = @"公司名称";
+            rightInfoString = @"测试待填asf撒ssdf 地方阿斯蒂芬大写拉升";
+
             break;
         case 1:
             leftTitleString = @"所属行业";
+            rightInfoString = @"测斯蒂芬大写拉升";
+
             break;
         case 2:
             leftTitleString = @"公司地址";
+            rightInfoString = @"测试待填asf撒ssdf 地方阿斯蒂芬大写拉升";
+
             break;
         case 3:
             leftTitleString = @"融资阶段";
+            rightInfoString = @"测f 地方阿斯蒂芬大写拉升";
+
             break;
         case 4:
             leftTitleString = @"启动时间";
+            rightInfoString = @"测试待填蒂芬大写拉升";
+
             break;
             
         default:
@@ -93,7 +105,7 @@
     
     _leftTitleLabel.text = leftTitleString;
     
-    _rightInfoLabel.text = @"测试待填写拉升";
+    _rightInfoLabel.text = rightInfoString;
     
     
     NSDictionary *dic = [NSDictionary dictionaryWithObject:_leftTitleLabel.font forKey:NSFontAttributeName];

@@ -27,10 +27,7 @@
     _aDetailTextLabel.numberOfLines = 0;
     [_aDetailTextLabel setContentHuggingPriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisVertical];
     [_aDetailTextLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.contentView).offset(10);
-        make.right.equalTo(self.contentView).offset(-10);
-        make.top.equalTo(self.contentView).offset(20);
-        make.bottom.equalTo(self.contentView).offset(-10);
+        make.edges.mas_equalTo(UIEdgeInsetsMake(10, 10, 10, 10));
     }];
     
     return self;

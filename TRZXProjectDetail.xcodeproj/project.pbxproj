@@ -33,6 +33,13 @@
 		6D738DC51E692F9700A20990 /* TRZXProjectDetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D738DC41E692F9700A20990 /* TRZXProjectDetailViewModel.m */; };
 		6D738DC81E6948D800A20990 /* TRZXProjectDetailLeftTitleRightInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D738DC71E6948D800A20990 /* TRZXProjectDetailLeftTitleRightInfoTableViewCell.m */; };
 		6DD7E4BD1E69661300A45063 /* TRZXProjectDetailFinancingInfoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD7E4BC1E69661300A45063 /* TRZXProjectDetailFinancingInfoTableViewCell.m */; };
+		6DD7E4BF1E69771200A45063 /* Icon_ProjectDetail_ProjectHistory_RedDot.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD7E4BE1E69771200A45063 /* Icon_ProjectDetail_ProjectHistory_RedDot.png */; };
+		6DD7E4C21E69778300A45063 /* TRZXProjectDetailProjectHistoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD7E4C11E69778300A45063 /* TRZXProjectDetailProjectHistoryTableViewCell.m */; };
+		6DD7E4C51E698B3000A45063 /* TRZXProjectDetailTeamTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD7E4C41E698B3000A45063 /* TRZXProjectDetailTeamTableViewCell.m */; };
+		6DD7E4C81E6A37FE00A45063 /* TRZXCellConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD7E4C71E6A37FE00A45063 /* TRZXCellConfig.m */; };
+		6DD7E4CB1E6A94EF00A45063 /* TRZXProjectDetailCommentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD7E4CA1E6A94EF00A45063 /* TRZXProjectDetailCommentTableViewCell.m */; };
+		6DD7E4CE1E6AB54300A45063 /* TRZXProjectDeatilCommentOfOneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD7E4CD1E6AB54300A45063 /* TRZXProjectDeatilCommentOfOneView.m */; };
+		6DD7E4D11E6AE92100A45063 /* TRZXProjectDetailCommendTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD7E4D01E6AE92100A45063 /* TRZXProjectDetailCommendTableViewCell.m */; };
 		E84157524E9410D3848DBC29 /* libPods-TRZXProjectDetail.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68AD18CB5541FE9EE992CA94 /* libPods-TRZXProjectDetail.a */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +107,19 @@
 		6D738DC71E6948D800A20990 /* TRZXProjectDetailLeftTitleRightInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXProjectDetailLeftTitleRightInfoTableViewCell.m; sourceTree = "<group>"; };
 		6DD7E4BB1E69661300A45063 /* TRZXProjectDetailFinancingInfoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXProjectDetailFinancingInfoTableViewCell.h; sourceTree = "<group>"; };
 		6DD7E4BC1E69661300A45063 /* TRZXProjectDetailFinancingInfoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXProjectDetailFinancingInfoTableViewCell.m; sourceTree = "<group>"; };
+		6DD7E4BE1E69771200A45063 /* Icon_ProjectDetail_ProjectHistory_RedDot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_ProjectDetail_ProjectHistory_RedDot.png; sourceTree = "<group>"; };
+		6DD7E4C01E69778300A45063 /* TRZXProjectDetailProjectHistoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXProjectDetailProjectHistoryTableViewCell.h; sourceTree = "<group>"; };
+		6DD7E4C11E69778300A45063 /* TRZXProjectDetailProjectHistoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXProjectDetailProjectHistoryTableViewCell.m; sourceTree = "<group>"; };
+		6DD7E4C31E698B3000A45063 /* TRZXProjectDetailTeamTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXProjectDetailTeamTableViewCell.h; sourceTree = "<group>"; };
+		6DD7E4C41E698B3000A45063 /* TRZXProjectDetailTeamTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXProjectDetailTeamTableViewCell.m; sourceTree = "<group>"; };
+		6DD7E4C61E6A37FE00A45063 /* TRZXCellConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXCellConfig.h; sourceTree = "<group>"; };
+		6DD7E4C71E6A37FE00A45063 /* TRZXCellConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXCellConfig.m; sourceTree = "<group>"; };
+		6DD7E4C91E6A94EF00A45063 /* TRZXProjectDetailCommentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXProjectDetailCommentTableViewCell.h; sourceTree = "<group>"; };
+		6DD7E4CA1E6A94EF00A45063 /* TRZXProjectDetailCommentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXProjectDetailCommentTableViewCell.m; sourceTree = "<group>"; };
+		6DD7E4CC1E6AB54300A45063 /* TRZXProjectDeatilCommentOfOneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXProjectDeatilCommentOfOneView.h; sourceTree = "<group>"; };
+		6DD7E4CD1E6AB54300A45063 /* TRZXProjectDeatilCommentOfOneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXProjectDeatilCommentOfOneView.m; sourceTree = "<group>"; };
+		6DD7E4CF1E6AE92100A45063 /* TRZXProjectDetailCommendTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXProjectDetailCommendTableViewCell.h; sourceTree = "<group>"; };
+		6DD7E4D01E6AE92100A45063 /* TRZXProjectDetailCommendTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXProjectDetailCommendTableViewCell.m; sourceTree = "<group>"; };
 		B3EF3247441DFCB1250F6C3C /* Pods-TRZXProjectDetail.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXProjectDetail.release.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXProjectDetail/Pods-TRZXProjectDetail.release.xcconfig"; sourceTree = "<group>"; };
 		CB85A213CD1F84676FBA3061 /* Pods-TRZXProjectDetail.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TRZXProjectDetail.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TRZXProjectDetail/Pods-TRZXProjectDetail.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -234,6 +254,8 @@
 			children = (
 				6D5999AA1E67E50D00DCA317 /* TRZXProjectDetailViewController.h */,
 				6D5999AB1E67E50D00DCA317 /* TRZXProjectDetailViewController.m */,
+				6DD7E4C61E6A37FE00A45063 /* TRZXCellConfig.h */,
+				6DD7E4C71E6A37FE00A45063 /* TRZXCellConfig.m */,
 			);
 			path = VeiwController;
 			sourceTree = "<group>";
@@ -251,6 +273,16 @@
 				6D738DC71E6948D800A20990 /* TRZXProjectDetailLeftTitleRightInfoTableViewCell.m */,
 				6DD7E4BB1E69661300A45063 /* TRZXProjectDetailFinancingInfoTableViewCell.h */,
 				6DD7E4BC1E69661300A45063 /* TRZXProjectDetailFinancingInfoTableViewCell.m */,
+				6DD7E4C01E69778300A45063 /* TRZXProjectDetailProjectHistoryTableViewCell.h */,
+				6DD7E4C11E69778300A45063 /* TRZXProjectDetailProjectHistoryTableViewCell.m */,
+				6DD7E4C31E698B3000A45063 /* TRZXProjectDetailTeamTableViewCell.h */,
+				6DD7E4C41E698B3000A45063 /* TRZXProjectDetailTeamTableViewCell.m */,
+				6DD7E4C91E6A94EF00A45063 /* TRZXProjectDetailCommentTableViewCell.h */,
+				6DD7E4CA1E6A94EF00A45063 /* TRZXProjectDetailCommentTableViewCell.m */,
+				6DD7E4CC1E6AB54300A45063 /* TRZXProjectDeatilCommentOfOneView.h */,
+				6DD7E4CD1E6AB54300A45063 /* TRZXProjectDeatilCommentOfOneView.m */,
+				6DD7E4CF1E6AE92100A45063 /* TRZXProjectDetailCommendTableViewCell.h */,
+				6DD7E4D01E6AE92100A45063 /* TRZXProjectDetailCommendTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -268,6 +300,7 @@
 			isa = PBXGroup;
 			children = (
 				6D738DBB1E69050E00A20990 /* testIcon_backGroundImage.png */,
+				6DD7E4BE1E69771200A45063 /* Icon_ProjectDetail_ProjectHistory_RedDot.png */,
 				6D738DB11E6879C000A20990 /* Icon_ProjectDetail_Collection_Selected.png */,
 				6D738DB21E6879C000A20990 /* Icon_ProjectDetail_Collection_Normal_White.png */,
 				6D738DB31E6879C000A20990 /* Icon_ProjectDetail_Collection_Normal_Gray.png */,
@@ -410,6 +443,7 @@
 				181D82F71E67D5F200D756AC /* LaunchScreen.storyboard in Resources */,
 				181D82F41E67D5F200D756AC /* Assets.xcassets in Resources */,
 				6D738DB41E6879C000A20990 /* Icon_ProjectDetail_Collection_Selected.png in Resources */,
+				6DD7E4BF1E69771200A45063 /* Icon_ProjectDetail_ProjectHistory_RedDot.png in Resources */,
 				6D738DA21E68364400A20990 /* Icon_ProjectDetail_Back_Selected.png in Resources */,
 				181D82F21E67D5F200D756AC /* Main.storyboard in Resources */,
 			);
@@ -485,17 +519,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				6D738D8D1E67F67300A20990 /* TRZXProjectDetailModel.m in Sources */,
+				6DD7E4C21E69778300A45063 /* TRZXProjectDetailProjectHistoryTableViewCell.m in Sources */,
 				6D5999AF1E67E50D00DCA317 /* TRZXProjectDetailViewController.m in Sources */,
 				6DD7E4BD1E69661300A45063 /* TRZXProjectDetailFinancingInfoTableViewCell.m in Sources */,
 				181D82EF1E67D5F200D756AC /* ViewController.m in Sources */,
 				6D738DC21E69276D00A20990 /* TRZXProjectDetailOnlyTextTableViewCell.m in Sources */,
+				6DD7E4CE1E6AB54300A45063 /* TRZXProjectDeatilCommentOfOneView.m in Sources */,
+				6DD7E4C51E698B3000A45063 /* TRZXProjectDetailTeamTableViewCell.m in Sources */,
+				6DD7E4D11E6AE92100A45063 /* TRZXProjectDetailCommendTableViewCell.m in Sources */,
 				6D738D991E68265700A20990 /* TRZXProjectDetailNavigationBar.m in Sources */,
 				6D5999AE1E67E50D00DCA317 /* Target_TRZXProjectDetail.m in Sources */,
+				6DD7E4C81E6A37FE00A45063 /* TRZXCellConfig.m in Sources */,
 				181D82EC1E67D5F200D756AC /* AppDelegate.m in Sources */,
 				6D738DB91E6901B900A20990 /* TRZXProjectDetailTableViewHeaderView.m in Sources */,
 				6D738D901E67FD9400A20990 /* TRZXProjectDetailDataModel.m in Sources */,
 				6D738DC51E692F9700A20990 /* TRZXProjectDetailViewModel.m in Sources */,
 				6D738DC81E6948D800A20990 /* TRZXProjectDetailLeftTitleRightInfoTableViewCell.m in Sources */,
+				6DD7E4CB1E6A94EF00A45063 /* TRZXProjectDetailCommentTableViewCell.m in Sources */,
 				181D82E91E67D5F200D756AC /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
