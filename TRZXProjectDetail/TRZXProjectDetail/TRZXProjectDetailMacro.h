@@ -2,7 +2,7 @@
 //  TRZXProjectDetailMacro.h
 //  TRZXProjectDetail
 //
-//  Created by zhangbao on 2017/3/3.
+//  Created by zhangbao on 2017/3/7.
 //  Copyright © 2017年 TRZX. All rights reserved.
 //
 
@@ -12,7 +12,6 @@
 #import <UIKit/UIKit.h>
 #import <Masonry/Masonry.h>
 #import <MJExtension/MJExtension.h>
-//#import <YYText/YYText.h>
 
 #import <TRZXKit/TRZXKit.h>
 
