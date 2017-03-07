@@ -24,14 +24,13 @@
  */
 - (UITableViewCell *)cellWithTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath;
 
+- (UITableViewHeaderFooterView *)viewForHeaderWith:(UITableView *)tableView section:(NSInteger)section;
+
+- (CGFloat)heightForHeaderWithTableView:(UITableView *)tableView section:(NSInteger)section;
+
 /**
  存储 cell
  */
-@property (nonatomic, strong) NSMutableArray <NSArray <TRZXCellConfig *> *> *cellArray;
-
-/**
- 存储 sectionHeader
- */
-@property (nonatomic, strong) NSMutableArray <NSArray <TRZXCellConfig *> *> *sectionHeaderArray;
+@property (nonatomic, strong) NSMutableArray <NSArray <TRZXCellConfig *> *> *sectionArray;
 
 @end

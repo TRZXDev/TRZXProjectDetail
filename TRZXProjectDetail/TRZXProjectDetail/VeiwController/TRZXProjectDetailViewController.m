@@ -55,6 +55,9 @@ UITableViewDataSource
     [self receiveActions];
     
     [self.projectDetailVM request:^{
+        
+        [self configSubViews];
+        
         [self.tableView reloadData];
     }];
     
@@ -111,15 +114,20 @@ UITableViewDataSource
     }];
 }
 
+- (void)configSubViews
+{
+    [_tableViewHeaderView setCoverImage:@"" titile:@""];
+}
+
 #pragma mark - <UITableViewDelegate/DataSource>
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return self.projectDetailVM.cellArray.count;
+    return self.projectDetailVM.sectionArray.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return self.projectDetailVM.cellArray[section].count;
+    return self.projectDetailVM.sectionArray[section].count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -127,6 +135,18 @@ UITableViewDataSource
     UITableViewCell *cell = [self.projectDetailVM cellWithTableView:tableView indexPath:indexPath];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     return cell;
+}
+
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+    UITableViewHeaderFooterView *headerView = [self.projectDetailVM viewForHeaderWith:tableView section:section];
+    
+    return headerView;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return [self.projectDetailVM heightForHeaderWithTableView:tableView section:section];
 }
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView
@@ -152,15 +172,12 @@ UITableViewDataSource
         _tableView.backgroundColor = kTRZXBGrayColor;
         // 自动计算cell高度
         _tableView.estimatedRowHeight = 80.0f;
+        // iOS8 系统中 rowHeight 的默认值已经设置成了 UITableViewAutomaticDimension
         _tableView.rowHeight = UITableViewAutomaticDimension;
-        _tableView.estimatedSectionHeaderHeight = 80.0f;
-        _tableView.sectionFooterHeight = UITableViewAutomaticDimension;
-        // 去除cell选中效果
+//        _tableView.estimatedSectionHeaderHeight = 10;
+//        _tableView.sectionHeaderHeight = UITableViewAutomaticDimension;
+         // 去除cell分割线
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        
-        // 注册cell
-//        [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
-        
     }
     return _tableView;
 }

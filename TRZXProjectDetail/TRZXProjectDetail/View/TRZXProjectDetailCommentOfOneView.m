@@ -6,11 +6,11 @@
 //  Copyright © 2017年 TRZX. All rights reserved.
 //
 
-#import "TRZXProjectDeatilCommentOfOneView.h"
+#import "TRZXProjectDetailCommentOfOneView.h"
 #import "TRZXProjectDetailMacro.h"
 
 
-@implementation TRZXProjectDeatilCommentOfOneView
+@implementation TRZXProjectDetailCommentOfOneView
 
 - (instancetype)init
 {

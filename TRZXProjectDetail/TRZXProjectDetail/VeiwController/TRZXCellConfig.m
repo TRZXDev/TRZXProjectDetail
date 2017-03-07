@@ -59,37 +59,79 @@ static NSUInteger SelectorArgumentCount(SEL selector)
 
 @implementation TRZXCellConfig
 
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        
+        _sectionHeaderHeight = 0;
+        
+        _sectionFooterHeight = 0;
+        
+    }
+    return self;
+}
+
+#pragma mark - <Public-Method>
 // 便利构造器
 + (instancetype)cellConfigWithClass:(Class)cellClass
-                     showInfoMethod:(SEL)showInfoMethod
+                 showCellInfoMethod:(SEL)showCellInfoMethod
 {
+    return [self cellConfigWithClass:cellClass sectionHeaderClass:nil showCellInfoMethod:showCellInfoMethod showSectionHeaderInfoMethod:nil];
+}
+
++ (instancetype)cellConfigWithClass:(Class)cellClass
+                 sectionHeaderClass:(Class)sectionHeaderClass
+                 showCellInfoMethod:(SEL)showCellInfoMethod
+        showSectionHeaderInfoMethod:(SEL)showSectionHeaderInfoMethod
+{
+    return [self cellConfigWithClass:cellClass sectionHeaderClass:sectionHeaderClass sectionFooterClass:nil showCellInfoMethod:showCellInfoMethod showSectionHeaderInfoMethod:showSectionHeaderInfoMethod showSectionFooterInfoMethod:nil];
+}
+
++ (instancetype)cellConfigWithClass:(Class)cellClass
+                 sectionHeaderClass:(Class)sectionHeaderClass
+                 sectionFooterClass:(Class)sectionFooterClass
+                 showCellInfoMethod:(SEL)showCellInfoMethod
+        showSectionHeaderInfoMethod:(SEL)showSectionHeaderInfoMethod
+        showSectionFooterInfoMethod:(SEL)showSectionFooterInfoMethod
+{
+    
     TRZXCellConfig *cellConfig = [[TRZXCellConfig alloc] init];
     
     cellConfig.cellClass = cellClass;
-
-    cellConfig.showInfoMethod = showInfoMethod;
+    
+    cellConfig.sectionHeaderClass = sectionHeaderClass;
+    
+    cellConfig.sectionFooterClass = sectionFooterClass;
+    
+    cellConfig.showCellInfoMethod = showCellInfoMethod;
+    
+    cellConfig.showSectionHeaderInfoMethod = showSectionHeaderInfoMethod;
+    
+    cellConfig.showSectionFooterInfoMethod = showSectionFooterInfoMethod;
     
     return cellConfig;
 }
 
-// 根据cellConfig生成cell
+
+// 根据 cellConfig 生成 cell
 - (UITableViewCell *)cellOfCellConfigWithTableView:(UITableView *)tableView
                                         dataModels:(NSArray *)dataModels
 {
     return [self cellOfCellConfigWithTableView:tableView dataModels:dataModels isNib:NO];
 }
 
-// 根据cellConfig生成cell,可使用Nib
+// 根据 cellConfig 生成 cell ,可使用 Nib
 - (UITableViewCell *)cellOfCellConfigWithTableView:(UITableView *)tableView
                                         dataModels:(NSArray *)dataModels
                                              isNib:(BOOL)isNib
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:[self cellID]];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:self.cellIdentifier];
     
     if (!cell) {
         
         // 加载nib的方法
-        if (isNib && ![self.cellClass isSubclassOfClass:[UITableViewCell class]]) {
+        if (isNib && [self.cellClass isSubclassOfClass:[UITableViewCell class]]) {
             NSArray *nibs = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(self.cellClass) owner:nil options:nil];
             
             for (id obj in nibs) {
@@ -104,29 +146,123 @@ static NSUInteger SelectorArgumentCount(SEL selector)
             
         } else {
             
-            cell = [[self.cellClass?:[UITableViewCell class] alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:[self cellID]];
+            cell = [[self.cellClass?:[UITableViewCell class] alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:self.cellIdentifier];
             
         }
     }
     
-    // 设置cell
-    if (self.showInfoMethod && [cell respondsToSelector:self.showInfoMethod]) {
+    // 执行 cell 赋值函数
+    if (self.showCellInfoMethod && [cell respondsToSelector:self.showCellInfoMethod]) {
         
-        [cell zb_performSelector:self.showInfoMethod withObjects:dataModels];
+        [cell zb_performSelector:self.showCellInfoMethod withObjects:dataModels];
     }
     
     return cell;
 }
 
-// 获取当前cell ID
-- (NSString *)cellID
+// 根据 cellConfig 生成 sectionHeaderView
+- (UITableViewHeaderFooterView *)sectionHederOfCellConfigWithTableView:(UITableView *)tableView
+                                                            dataModels:(NSArray *)dataModels
 {
-    if (self.reuseID.length) {
-        return self.reuseID;
-    }
-    return NSStringFromClass(self.cellClass);
+    return [self sectionHederOfCellConfigWithTableView:tableView dataModels:dataModels isNib:NO];
 }
 
+// 根据 cellConfig 生成 sectionHeaderView ,可用 Nib
+- (UITableViewHeaderFooterView *)sectionHederOfCellConfigWithTableView:(UITableView *)tableView
+                                                            dataModels:(NSArray *)dataModels
+                                                                 isNib:(BOOL)isNib
+{
+    return [self sectionHeaderFooterOfCellConfigWithTableView:tableView identifier:self.sectionHeaderIdentfier class:self.sectionHeaderClass showSectionHeaderFooterInfoMethod:self.showSectionHeaderInfoMethod dataModels:dataModels isNib:isNib];
+}
+
+// 根据 cellConfig 生成 sectionFooterView
+- (UITableViewHeaderFooterView *)sectionFooterOfCellConfigWithTableView:(UITableView *)tableView
+                                                            dataModels:(NSArray *)dataModels
+{
+    return [self sectionFooterOfCellConfigWithTableView:tableView dataModels:dataModels isNib:NO];
+}
+
+// 根据 cellConfig 生成 sectionFooterView ,可用 Nib
+- (UITableViewHeaderFooterView *)sectionFooterOfCellConfigWithTableView:(UITableView *)tableView
+                                                            dataModels:(NSArray *)dataModels
+                                                                 isNib:(BOOL)isNib
+{
+    return [self sectionHeaderFooterOfCellConfigWithTableView:tableView identifier:self.sectionFooterIdentfier class:self.sectionFooterClass showSectionHeaderFooterInfoMethod:self.showSectionFooterInfoMethod dataModels:dataModels isNib:isNib];
+}
+
+// 根据 cell 类 比较是否是当前 cellConfig
+- (BOOL)isIdentiFier:(Class)class
+{
+    return [self.cellIdentifier isEqualToString:NSStringFromClass(class)];
+}
+
+// 根据 cell 类 比较是否是当前 cellConfig
+- (BOOL)isTitle:(NSString *)title
+{
+    return [self.title isEqualToString:title];
+}
+
+#pragma mark - <Private-Method>
+- (UITableViewHeaderFooterView *)sectionHeaderFooterOfCellConfigWithTableView:(UITableView *)tableView identifier:(NSString *)identifier class:(Class)class showSectionHeaderFooterInfoMethod:(SEL)method dataModels:(NSArray *)dataModels isNib:(BOOL)isNib
+{
+    UITableViewHeaderFooterView *headerFooterView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:identifier];
+    
+    if (!headerFooterView) {
+        
+        // 加载nib的方法
+        if (isNib && [class isSubclassOfClass:[UITableViewHeaderFooterView class]]) {
+            NSArray *nibs = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass(class) owner:nil options:nil];
+            
+            for (id obj in nibs) {
+                if ([obj isKindOfClass:class]) {
+                    headerFooterView = obj;
+                }
+            }
+            
+            if (!headerFooterView) {
+                NSLog(@"Please Check Nib File About %@", NSStringFromClass(class));
+            }
+            
+        } else {
+            
+            headerFooterView = [[class?:[UITableViewHeaderFooterView class] alloc] initWithReuseIdentifier:identifier];
+            
+        }
+    }
+    
+    // 执行 sectionHeader 赋值函数
+    if (method && [headerFooterView respondsToSelector:method]) {
+        
+        [headerFooterView zb_performSelector:self.showSectionHeaderInfoMethod withObjects:dataModels];
+    }
+    
+    return headerFooterView;
+}
+
+#pragma mark - <Setter/Getter>
+- (NSString *)cellIdentifier
+{
+    if (!_cellIdentifier) {
+        _cellIdentifier = NSStringFromClass(self.cellClass);
+    }
+    return _cellIdentifier;
+}
+
+- (NSString *)sectionHeaderIdentfier
+{
+    if (!_sectionHeaderIdentfier) {
+        _sectionHeaderIdentfier = NSStringFromClass(self.sectionHeaderClass);
+    }
+    return _sectionHeaderIdentfier;
+}
+
+- (NSString *)sectionFooterIdentfier
+{
+    if (!_sectionFooterIdentfier) {
+        _sectionFooterIdentfier = NSStringFromClass(self.sectionFooterClass);
+    }
+    return _sectionFooterIdentfier;
+}
 
 @end
 

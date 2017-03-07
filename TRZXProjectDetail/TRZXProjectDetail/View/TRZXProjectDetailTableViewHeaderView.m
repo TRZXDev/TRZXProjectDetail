@@ -13,6 +13,10 @@
 
 @property (nonatomic, strong) UIImageView *backGroundImageView;
 
+@property (nonatomic, strong) UIImageView *headImageView;
+
+@property (nonatomic, strong) UILabel *titleLabel;
+
 @end
 
 @implementation TRZXProjectDetailTableViewHeaderView
@@ -21,8 +25,6 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        
-//        self.clipsToBounds = YES;
         
         [self addOwnViews];
         
@@ -35,6 +37,8 @@
 - (void)addOwnViews
 {
     [self addSubview:self.backGroundImageView];
+    [self addSubview:self.headImageView];
+    [self addSubview:self.titleLabel];
 }
 
 - (void)layoutFrameOfSubViews
@@ -42,6 +46,25 @@
     [_backGroundImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
     }];
+    
+    [_headImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(80, 80));
+        make.center.equalTo(self);
+    }];
+    
+    _titleLabel.numberOfLines = 0;
+    [_titleLabel setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
+    [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.right.equalTo(self);
+        make.top.equalTo(_headImageView.mas_bottom).offset(20);
+    }];
+}
+
+- (void)setCoverImage:(NSString *)coverImage titile:(NSString *)title
+{
+    _headImageView.image = [UIImage imageNamed:@"testIcon_backGroundImage"];
+    
+    _titleLabel.text = @"阿拉善龚启拉";
 }
 
 #pragma mark - <Public-Method>
@@ -64,6 +87,28 @@
         _backGroundImageView.image = [UIImage imageNamed:@"testIcon_backGroundImage"];
     }
     return _backGroundImageView;
+}
+
+- (UIImageView *)headImageView
+{
+    if (!_headImageView) {
+        _headImageView = [[UIImageView alloc] init];
+        _headImageView.clipsToBounds = YES;
+        _headImageView.layer.cornerRadius = 5;
+    }
+    return _headImageView;
+}
+
+- (UILabel *)titleLabel
+{
+    if (!_titleLabel) {
+        _titleLabel = [[UILabel alloc] init];
+        _titleLabel.textColor = [UIColor whiteColor];
+        _titleLabel.textAlignment = NSTextAlignmentCenter;
+        _titleLabel.shadowColor = [UIColor blackColor];
+        _titleLabel.shadowOffset = CGSizeMake(0, 1.0);
+    }
+    return _titleLabel;
 }
 
 @end

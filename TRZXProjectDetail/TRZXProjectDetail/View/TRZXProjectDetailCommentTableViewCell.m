@@ -8,7 +8,7 @@
 
 #import "TRZXProjectDetailCommentTableViewCell.h"
 #import "TRZXProjectDetailMacro.h"
-#import "TRZXProjectDeatilCommentOfOneView.h"
+#import "TRZXProjectDetailCommentOfOneView.h"
 
 @interface TRZXProjectDetailCommentTableViewCell()
 
@@ -22,7 +22,7 @@
 
 @property (nonatomic, strong) UITextField *commentTextField;
 
-@property (nonatomic, strong) TRZXProjectDeatilCommentOfOneView *commentOfOneView;
+@property (nonatomic, strong) TRZXProjectDetailCommentOfOneView *commentOfOneView;
 
 @property (nonatomic, strong) UILabel *moreCommentLable;
 
@@ -193,10 +193,10 @@
     return _commentTextField;
 }
 
-- (TRZXProjectDeatilCommentOfOneView *)commentOfOneView
+- (TRZXProjectDetailCommentOfOneView *)commentOfOneView
 {
     if (!_commentOfOneView) {
-        _commentOfOneView = [[TRZXProjectDeatilCommentOfOneView alloc] init];
+        _commentOfOneView = [[TRZXProjectDetailCommentOfOneView alloc] init];
     }
     return _commentOfOneView;
 }

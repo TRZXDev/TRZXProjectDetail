@@ -122,7 +122,7 @@
         [_backButton setTitleColor:[UIColor grayColor]  forState:UIControlStateSelected];
         [_backButton setTitle:@"返回" forState:UIControlStateNormal];
         _backButton.titleLabel.font = [UIFont systemFontOfSize:16];
-        _backButton.imageEdgeInsets = UIEdgeInsetsMake(14,10,12,63);
+        _backButton.imageEdgeInsets = UIEdgeInsetsMake(14,8,12,63);
         _backButton.titleEdgeInsets = UIEdgeInsetsMake(15,0,11,25);
         _backButton.tag = ENavigationBarAction_Back;
         [_backButton addTarget:self action:@selector(composeButtonClicked:) forControlEvents:UIControlEventTouchUpInside];

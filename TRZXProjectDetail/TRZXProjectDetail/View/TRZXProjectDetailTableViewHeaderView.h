@@ -12,4 +12,6 @@
 
 - (void)makeBackGroundImageScaleOfScrollViewDidScroll:(CGFloat)offset;
 
+- (void)setCoverImage:(NSString *)coverImage titile:(NSString *)title;
+
 @end

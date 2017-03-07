@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TRZXProjectDeatilCommentOfOneView : UITableViewCell
+@interface TRZXProjectDetailCommentOfOneView : UITableViewCell
 
 @property (nonatomic, strong) UIImageView *headImageView;
 
