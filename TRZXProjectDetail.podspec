@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TRZXProjectDetail"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "TRZXProjectDetail."
 
   # This description is used to generate tags and improve search results.
@@ -106,7 +106,7 @@ Pod::Spec.new do |s|
   #
 
   # s.resource  = "icon.png"
-  s.resources = "TRZXProjectDetail/TRZXProjectDetail/**/*.{png,xib}"
+  s.resources = "TRZXProjectDetail/TRZXProjectDetail/**/*.{xib,png}"
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 

@@ -9,22 +9,22 @@
 #import "TRZXCellConfig.h"
 
 //判断selector有几个参数
-static NSUInteger SelectorArgumentCount(SEL selector)
-{
-    NSUInteger argumentCount = 0;
-    //sel_getName获取selector名的C字符串
-    const char *selectorStringCursor = sel_getName(selector);
-    char ch;
-    //    遍历字符串有几个:来确定有几个参数
-    while((ch = *selectorStringCursor)) {
-        if(ch == ':') {
-            ++argumentCount;
-        }
-        ++selectorStringCursor;
-    }
-    
-    return argumentCount;
-}
+//static NSUInteger SelectorArgumentCount(SEL selector)
+//{
+//    NSUInteger argumentCount = 0;
+//    //sel_getName获取selector名的C字符串
+//    const char *selectorStringCursor = sel_getName(selector);
+//    char ch;
+//    //    遍历字符串有几个:来确定有几个参数
+//    while((ch = *selectorStringCursor)) {
+//        if(ch == ':') {
+//            ++argumentCount;
+//        }
+//        ++selectorStringCursor;
+//    }
+//    
+//    return argumentCount;
+//}
 
 @interface  NSObject(ZBPerformingObjects)
 - (void)zb_performSelector:(SEL)aSelector withObjects:(NSArray *)objects;

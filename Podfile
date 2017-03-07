@@ -11,6 +11,8 @@ target 'TRZXProjectDetail' do
   pod 'Masonry'
   pod 'MJExtension'
   
+#  投融在线
   pod 'TRZXKit'
+  pod 'TRZXNetwork'
  
 end

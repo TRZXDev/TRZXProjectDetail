@@ -10,10 +10,12 @@
 #define TRZXProjectDetailMacro_h
 
 #import <UIKit/UIKit.h>
+
 #import <Masonry/Masonry.h>
 #import <MJExtension/MJExtension.h>
 
 #import <TRZXKit/TRZXKit.h>
+#import <TRZXNetwork/TRZXNetwork.h>
 
 #define kTRZXBGrayColor [UIColor colorWithRed:240.0/255.0 green:239.0/255.0 blue:244.0/255.0 alpha:1]
 #define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/256.0f green:(g)/256.0f blue:(b)/256.0f alpha:(a)]

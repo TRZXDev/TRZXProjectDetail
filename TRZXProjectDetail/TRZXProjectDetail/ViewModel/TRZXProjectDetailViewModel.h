@@ -7,30 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TRZXProjectDetailMacro.h"
-#import "TRZXCellConfig.h"
+
+@class TRZXProjectDetailModel;
 
 @interface TRZXProjectDetailViewModel : NSObject
 
-- (void)request:(void(^)())succes;
+@property (nonatomic, strong) TRZXProjectDetailModel *projectDetailModel;
 
-
-/**
- 根据cellArray获取当前cell
-
- @param tableView tableView
- @param indexPath indexPath
- @return cell
- */
-- (UITableViewCell *)cellWithTableView:(UITableView *)tableView indexPath:(NSIndexPath *)indexPath;
-
-- (UITableViewHeaderFooterView *)viewForHeaderWith:(UITableView *)tableView section:(NSInteger)section;
-
-- (CGFloat)heightForHeaderWithTableView:(UITableView *)tableView section:(NSInteger)section;
-
-/**
- 存储 cell
- */
-@property (nonatomic, strong) NSMutableArray <NSArray <TRZXCellConfig *> *> *sectionArray;
+- (void)reloadDataFromProjectDetailNetwork:(NSString *)projectID success:(void(^)(id json))success failure:(void(^)(NSError *error))failure;
 
 @end

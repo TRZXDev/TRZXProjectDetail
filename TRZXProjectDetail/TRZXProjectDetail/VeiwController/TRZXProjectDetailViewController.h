@@ -10,4 +10,6 @@
 
 @interface TRZXProjectDetailViewController : UIViewController
 
+@property (nonatomic, strong) NSString *projectId;
+
 @end
