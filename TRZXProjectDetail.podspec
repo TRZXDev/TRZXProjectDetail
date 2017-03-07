@@ -92,6 +92,7 @@ Pod::Spec.new do |s|
   #
 
   s.source_files  = "TRZXProjectDetail/TRZXProjectDetail/**/*.{h,m}"
+  s.resources    = "TRZXProjectDetail/TRZXProjectDetail/**/*.{xib,png}"
   # s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
@@ -136,5 +137,9 @@ Pod::Spec.new do |s|
   # s.dependency "BLNetworking"
   # s.dependency "BLAPIManagers"
   # s.dependency "BLMediator"
+
+  s.dependency "TRZXKit"
+  s.dependency "MJExtension"
+  s.dependency "Masonry"
 
 end

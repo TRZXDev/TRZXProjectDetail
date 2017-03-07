@@ -12,6 +12,6 @@ target 'TRZXProjectDetail' do
     
     pod 'MJExtension'
     pod 'Masonry'
-    pod 'YYText'
- 
+#    pod 'YYText'
+
 end
