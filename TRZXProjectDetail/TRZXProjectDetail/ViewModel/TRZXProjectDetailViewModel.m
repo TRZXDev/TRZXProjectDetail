@@ -39,6 +39,10 @@
             
             self.projectDetailModel = [TRZXProjectDetailModel mj_objectWithKeyValues:response];
             
+            if (success) {
+                success(response);
+            }
+            
         }
         
     }];

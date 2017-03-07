@@ -148,6 +148,15 @@ UITableViewDataSource
         
     } failure:^(NSError *error) {
         
+        // 配置子视图
+        [self configSubViews];
+        
+        // 配置 cell
+        [self configSectionCells];
+        
+        // 刷新列表
+        [self.tableView reloadData];
+        
     }];
 }
 
