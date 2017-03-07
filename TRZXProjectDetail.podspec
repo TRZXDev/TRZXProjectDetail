@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TRZXProjectDetail"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "TRZXProjectDetail."
 
   # This description is used to generate tags and improve search results.
