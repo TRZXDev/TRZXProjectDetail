@@ -53,7 +53,7 @@
 		6DD92BF01E6FFC0300B61C6A /* TRZXTableViewCoverHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92BE51E6FFC0300B61C6A /* TRZXTableViewCoverHeaderView.m */; };
 		6DD92BF31E6FFC4200B61C6A /* TRZXProjectDetailTableViewCoverHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6DD92BF21E6FFC4200B61C6A /* TRZXProjectDetailTableViewCoverHeaderView.m */; };
 		6DD92C141E702E4600B61C6A /* Icon_PlaceholderImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 6DD92C131E702E4600B61C6A /* Icon_PlaceholderImage.png */; };
-		E84157524E9410D3848DBC29 /* libPods-TRZXProjectDetail.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 68AD18CB5541FE9EE992CA94 /* libPods-TRZXProjectDetail.a */; };
+		D790D71341D7A40428816593 /* Pods_TRZXProjectDetail.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1237F8C5F8F1A9835BF68B21 /* Pods_TRZXProjectDetail.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +74,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1237F8C5F8F1A9835BF68B21 /* Pods_TRZXProjectDetail.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TRZXProjectDetail.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		181D82E41E67D5F200D756AC /* TRZXProjectDetail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TRZXProjectDetail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		181D82E81E67D5F200D756AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		181D82EA1E67D5F200D756AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,7 +91,6 @@
 		181D83081E67D5F200D756AC /* TRZXProjectDetailUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TRZXProjectDetailUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		181D830C1E67D5F200D756AC /* TRZXProjectDetailUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TRZXProjectDetailUITests.m; sourceTree = "<group>"; };
 		181D830E1E67D5F200D756AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		68AD18CB5541FE9EE992CA94 /* libPods-TRZXProjectDetail.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TRZXProjectDetail.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6D0C5AFD1E6D40B7008FE28E /* TRZXProjectDetailTitleSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXProjectDetailTitleSectionHeaderView.h; sourceTree = "<group>"; };
 		6D0C5AFE1E6D40B7008FE28E /* TRZXProjectDetailTitleSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TRZXProjectDetailTitleSectionHeaderView.m; sourceTree = "<group>"; };
 		6D0C5B001E6D40F6008FE28E /* TRZXProjectDetailLeftRedTitleSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TRZXProjectDetailLeftRedTitleSectionHeaderView.h; sourceTree = "<group>"; };
@@ -161,7 +161,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E84157524E9410D3848DBC29 /* libPods-TRZXProjectDetail.a in Frameworks */,
+				D790D71341D7A40428816593 /* Pods_TRZXProjectDetail.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,7 +250,7 @@
 		4C0B058CBE2CAF97D4B793F7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				68AD18CB5541FE9EE992CA94 /* libPods-TRZXProjectDetail.a */,
+				1237F8C5F8F1A9835BF68B21 /* Pods_TRZXProjectDetail.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
