@@ -7,6 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TRZXProjectDetailMacro.h"
+#import "TRZXProjectDetailModel.h"
+#import "TRZXProjectDetailDataModel.h"
+#import "TRZXRecommendModel.h"
 
 @class TRZXProjectDetailModel;
 
@@ -14,6 +18,10 @@
 
 @property (nonatomic, strong) TRZXProjectDetailModel *projectDetailModel;
 
-- (void)reloadDataFromProjectDetailNetwork:(NSString *)projectID success:(void(^)(id json))success failure:(void(^)(NSError *error))failure;
+@property (nonatomic, strong) TRZXRecommendModel *recommendModel;
+
+@property (nonatomic, strong) NSString *projectId;
+
+@property (nonatomic, strong) RACSignal *requestSignal_projectDetail;
 
 @end

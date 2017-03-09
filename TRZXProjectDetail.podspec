@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "TRZXProjectDetail"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "TRZXProjectDetail."
 
   # This description is used to generate tags and improve search results.
@@ -135,9 +135,13 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "BLNetworking"
   # s.dependency "BLAPIManagers"
-  # s.dependency "BLMediator"
+  # s.dependency "BLAPIManagers"
+  # s.dependency "BLAPIManagers"
+  # s.dependency "BLAPIManagers"
+  s.dependency "ZBCellConfig"
   s.dependency "Masonry"
   s.dependency "MJExtension"
   s.dependency "TRZXKit"
+  s.dependency "TRZXNetwork"
 
 end

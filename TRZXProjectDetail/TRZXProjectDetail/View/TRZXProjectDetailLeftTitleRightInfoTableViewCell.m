@@ -8,6 +8,7 @@
 
 #import "TRZXProjectDetailLeftTitleRightInfoTableViewCell.h"
 #import "TRZXProjectDetailMacro.h"
+#import "TRZXProjectDetailModel.h"
 
 @interface TRZXProjectDetailLeftTitleRightInfoTableViewCell()
 
@@ -67,7 +68,7 @@
     
 }
 
-- (void)setModel:(TRZXProjectDetailModel *)model indexPath:(NSIndexPath *)indexPath
+- (void)setModel:(TRZXProjectDetailDataModel *)model indexPath:(NSIndexPath *)indexPath
 {
     NSString *leftTitleString = @"";
     NSString *rightInfoString = @"";
@@ -75,27 +76,27 @@
     switch (indexPath.row) {
         case 0:
             leftTitleString = @"公司名称";
-            rightInfoString = @"测试待填asf撒ssdf 地方阿斯蒂芬大写拉升";
+            rightInfoString = model.companyName;
 
             break;
         case 1:
             leftTitleString = @"所属行业";
-            rightInfoString = @"测斯蒂芬大写拉升";
+            rightInfoString = model.tradeInfo;
 
             break;
         case 2:
             leftTitleString = @"公司地址";
-            rightInfoString = @"测试待填asf撒ssdf 地方阿斯蒂芬大写拉升";
+            rightInfoString = model.companyAddress;
 
             break;
         case 3:
             leftTitleString = @"融资阶段";
-            rightInfoString = @"测f 地方阿斯蒂芬大写拉升";
+            rightInfoString = model.areaName;
 
             break;
         case 4:
             leftTitleString = @"启动时间";
-            rightInfoString = @"测试待填蒂芬大写拉升";
+            rightInfoString = model.startDate;
 
             break;
             

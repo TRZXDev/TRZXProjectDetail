@@ -8,6 +8,7 @@
 
 #import "TRZXProjectDetailFinancingInfoTableViewCell.h"
 #import "TRZXProjectDetailMacro.h"
+#import "TRZXProjectDetailModel.h"
 
 @interface TRZXProjectDetailFinancingInfoTableViewCellOfSubView : UIView
 
@@ -135,13 +136,22 @@
 }
 
 #pragma mark - <Setter/Getter>
-- (void)setModel:(TRZXProjectDetailModel *)model
+- (void)setModel:(TRZXProjectDetailDataProjectFinancingModel *)model
 {
     _model = model;
     
-    NSArray *subViewDetailStrings = @[@"2014-12-12/2016-12-59", @"￥22222万", @"￥35145.7万", @"22.8%"];
+    NSString *timeString = [NSString stringWithFormat:@"%@/ %@",model.startDate,model.endDate];
+    
+    NSString *amountString = model.amount?[NSString stringWithFormat:@"￥%.2f万",model.amount]:@"";
+    
+    NSString *valuationString = model.valuation?[NSString stringWithFormat:@"￥%.2f万",model.valuation]:@"";
+    
+    NSString *stockPercentageString = model.stockPercentage?[NSString stringWithFormat:@"%.2f%%",model.stockPercentage]:@"";
+    
+    NSArray *subViewDetailStrings = @[timeString?timeString:@"", amountString, valuationString, stockPercentageString];
     
     [_financingInfoSubViews enumerateObjectsUsingBlock:^(TRZXProjectDetailFinancingInfoTableViewCellOfSubView * _Nonnull subView, NSUInteger idx, BOOL * _Nonnull stop) {
+        
         subView.detailLabel.text = subViewDetailStrings[idx];
     }];
     

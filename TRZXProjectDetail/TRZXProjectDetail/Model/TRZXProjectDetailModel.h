@@ -7,8 +7,9 @@
 //  项目详情模型
 
 #import <Foundation/Foundation.h>
+#import "TRZXProjectDetailDataModel.h"
 
-@class TRZXProjectDetailDataModel, TRZXProjectDetailCommentModel, TRZXProjectDetailVisitorModel;
+@class TRZXProjectDetailCommentModel, TRZXProjectDetailVisitorModel;
 
 @interface TRZXProjectDetailModel : NSObject
 
@@ -40,6 +41,7 @@
 
 @property (nonatomic, strong) NSString *mid;
 @property (nonatomic, strong) NSString *commentUserId;
+@property (nonatomic, strong) NSString *commentUserName;
 @property (nonatomic, strong) NSString *commentUserPhoto;
 @property (nonatomic, strong) NSString *beCommentId;
 @property (nonatomic, strong) NSString *remarks;

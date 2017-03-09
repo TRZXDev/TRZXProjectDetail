@@ -8,6 +8,7 @@
 
 #import "TRZXProjectDetailProjectHistoryTableViewCell.h"
 #import "TRZXProjectDetailMacro.h"
+#import "TRZXProjectDetailModel.h"
 
 @interface TRZXProjectDetailProjectHistoryTableViewCell()
 
@@ -82,29 +83,13 @@
     }];
 }
 
-- (void)setModel:(TRZXProjectDetailModel *)model indexPath:(NSIndexPath *)indexPath
+- (void)setModel:(TRZXProjectDetailDataDynamicModel *)model indexPath:(NSIndexPath *)indexPath
 {
     _topShortLineView.hidden = indexPath.row == 0 ? YES : NO;
     
-    _timeLable.text = @"2017-12-12";
+    _timeLable.text = model.dynamicDate;
     
-    
-    if (indexPath.row == 2) {
-        _describeLabel.hidden = YES;
-    }else {
-        _describeLabel.hidden = NO;
-        _describeLabel.text = @"庆历四年春，滕子京谪守巴陵郡。越明年，政通人和，百废具兴。乃重修岳阳楼，增其旧制，刻唐贤今人诗赋于其上。属予作文以记之";
-        
-    }
-    
-//    [self setNeedsUpdateConstraints];
-//    [self updateConstraintsIfNeeded];
-//////    [UIView animateWithDuration:1 animations:^{
-//        [self layoutIfNeeded];
-//    } completion:^(BOOL finished) {
-//        
-//    }];
-    
+    _describeLabel.text = model.abstractz;
 }
 
 #pragma mark - <Setter/Getter>

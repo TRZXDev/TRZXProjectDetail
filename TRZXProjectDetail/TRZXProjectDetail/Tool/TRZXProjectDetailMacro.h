@@ -13,6 +13,8 @@
 
 #import <Masonry/Masonry.h>
 #import <MJExtension/MJExtension.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
 
 #import <TRZXKit/TRZXKit.h>
 #import <TRZXNetwork/TRZXNetwork.h>

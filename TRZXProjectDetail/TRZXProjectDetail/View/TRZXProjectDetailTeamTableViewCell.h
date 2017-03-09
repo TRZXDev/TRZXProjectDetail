@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class TRZXProjectDetailModel;
+@class TRZXProjectDetailDataTeamModel;
 
 @interface TRZXProjectDetailTeamTableViewCell : UITableViewCell
 
-- (void)setModel:(TRZXProjectDetailModel *)model indexPath:(NSIndexPath *)indexPath;
+@property (nonatomic, strong) TRZXProjectDetailDataTeamModel *model;
 
 @end

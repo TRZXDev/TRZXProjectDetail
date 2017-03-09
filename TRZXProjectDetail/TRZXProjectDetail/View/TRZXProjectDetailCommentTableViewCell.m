@@ -9,6 +9,7 @@
 #import "TRZXProjectDetailCommentTableViewCell.h"
 #import "TRZXProjectDetailMacro.h"
 #import "TRZXProjectDetailCommentOfOneView.h"
+#import "TRZXProjectDetailModel.h"
 
 @interface TRZXProjectDetailCommentTableViewCell()
 
@@ -100,43 +101,46 @@
     
     [_moreCommentLable mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(self.contentView);
-        make.right.equalTo(self.contentView).offset(-10);
         make.height.mas_equalTo(30);
+        make.right.equalTo(self.contentView).offset(-10);
         make.top.equalTo(_moreSparateLineView.mas_bottom);
     }];
 }
+
+
 
 - (void)setModel:(TRZXProjectDetailModel *)model
 {
     _model = model;
     
-    _commentCountLabel.text = @"3条评论";
+    _commentCountLabel.text = [NSString stringWithFormat:@"%ld条评价", model.commentsJson.count];
     
-    _commentOfOneView.headImageView.image = [UIImage imageNamed:@"testIcon_backGroundImage"];
+    if (model.commentsJson.count > 0) {
+        
+        _commentOfOneView.hidden = NO;
+        
+        _commentOfOneView.model = model.commentsJson.firstObject;
+        
+        [self layoutIfNeeded];
+        [_commentOfOneView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.height.mas_equalTo(CGRectGetMaxY(_commentOfOneView.commentDeatilLabel.frame)+5);
+        }];
+        
+    }else {
+        
+        _commentOfOneView.hidden = YES;
+        
+        [_commentOfOneView mas_updateConstraints:^(MASConstraintMaker *make) {
+            make.height.mas_equalTo(0);
+        }];
+        
+    }
     
-    _commentOfOneView.nameLabel.text = @"阿拉善";
+    _moreCommentLable.hidden = _moreSparateLineView.hidden = model.commentsJson.count < 1;
     
-    _commentOfOneView.sendCommentTimeLabel.text = @"发表于2个小时前";
-    
-    _commentOfOneView.commentDeatilLabel.text = @"庆历四年春，滕子京谪守巴陵郡。越明年，政通人和，百废具兴。乃重修岳阳楼，增其旧制，刻唐贤今人诗赋于其上。属予作文以记之。(具 通：俱)\n予观夫巴陵胜状，在洞庭一湖。衔远山，吞长江，浩浩汤汤，横无际涯；朝晖夕阴，气象万千。此则岳阳楼之大观也，前人之述备矣。然则北通巫峡，南极潇湘，迁客骚人，多会于此，览物之情，得无异乎?";
-    
-    [self layoutIfNeeded];
-    [_commentOfOneView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.height.mas_equalTo(CGRectGetMaxY(_commentOfOneView.commentDeatilLabel.frame)+5);
+    [_moreCommentLable mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.height.mas_equalTo(model.commentsJson.count > 1 ? 30 : 0);
     }];
-    
-//    _moreCommentLable.hidden = YES;
-//    _moreSparateLineView.hidden = YES;
-//    [_moreCommentLable mas_updateConstraints:^(MASConstraintMaker *make) {
-//        make.height.mas_equalTo(0);
-//        make.bottom.equalTo(self.contentView).offset(-10);
-//    }];
-//    
-//    _commentOfOneView.hidden = YES;
-//    [_commentOfOneView mas_updateConstraints:^(MASConstraintMaker *make) {
-//        make.height.mas_equalTo(0);
-//    }];
-//    
     
 }
 

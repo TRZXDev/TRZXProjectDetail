@@ -18,6 +18,14 @@
     
 }
 
++ (NSDictionary *)mj_objectClassInArray
+{
+    return @{
+             @"teamList" : @"TRZXProjectDetailDataTeamModel",
+             @"dynamicList"     : @"TRZXProjectDetailDataDynamicModel"
+             };
+}
+
 @end
 
 @implementation TRZXProjectDetailDataProjectFinancingModel

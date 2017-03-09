@@ -8,6 +8,7 @@
 
 #import "TRZXProjectDetailOnLineClassTableViewCell.h"
 #import "TRZXProjectDetailMacro.h"
+#import "TRZXRecommendModel.h"
 
 @interface TRZXProjectDetailOnLineClassTableViewCell()
 
@@ -92,21 +93,31 @@
     
 }
 
-- (void)setModel:(TRZXProjectDetailModel *)model indexPath:(NSIndexPath *)indexPath
+- (void)setCoursezModel:(TRZXRecommendCoursez *)coursezModel
 {
-    _headImageView.image = [UIImage imageNamed:@"testIcon_backGroundImage"];
+    _coursezModel = coursezModel;
     
-    _nameLabel.text = @"阿拉善";
+    [_headImageView sd_setImageWithURL:[NSURL URLWithString:coursezModel.userPic] placeholderImage:[UIImage imageNamed:@"Icon_PlaceholderImage"]];
     
-    _titleLabel.text = @"庆历四年春，滕子京谪守巴陵郡";
-    if (indexPath.row == 1) {
-        _titleLabel.text = @"庆历四年春，滕子京谪守巴陵郡滕子京谪守巴陵郡";
-    }
+    _nameLabel.text = coursezModel.user;
     
-    _descriptionLabel.text = @"庆历四年春，滕子京谪守巴陵郡。越明年，政通人和，百废具兴。乃重修岳阳楼，增其旧制，刻唐贤今人诗赋于其上。";
-    if (indexPath.row == 2) {
-        _descriptionLabel.text = @"庆历四年春，滕子京谪守Z";
-    }
+    _titleLabel.text = coursezModel.name;
+    
+    _descriptionLabel.text = [NSString stringWithFormat:@"%@,%@",coursezModel.company,coursezModel.title];
+}
+
+- (void)setExpertTopicModel:(TRZXRecommendExpertTopic *)expertTopicModel
+{
+    _expertTopicModel = expertTopicModel;
+    
+    
+    [_headImageView sd_setImageWithURL:[NSURL URLWithString:expertTopicModel.expertPhoto] placeholderImage:[UIImage imageNamed:@"Icon_PlaceholderImage"]];
+    
+    _nameLabel.text = expertTopicModel.topicTitle;
+    
+    _titleLabel.text = expertTopicModel.realName;
+    
+    _descriptionLabel.text = [NSString stringWithFormat:@"%@,%@  ",expertTopicModel.company,expertTopicModel.ePosition];
 }
 
 #pragma mark - <Setter/Getter>

@@ -8,6 +8,7 @@
 
 #import "TRZXProjectDetailnvestTableViewCell.h"
 #import "TRZXProjectDetailMacro.h"
+#import "TRZXRecommendModel.h"
 
 @interface TRZXProjectDetailnvestTableViewCell()
 
@@ -74,15 +75,21 @@
     }];
 }
 
-- (void)setModel:(TRZXProjectDetailModel *)model indexPath:(NSIndexPath *)indexPath
+- (void)setInvestorModel:(TRZXRecommendInvestor *)investorModel
 {
-    _headImageView.image = [UIImage imageNamed:@"testIcon_backGroundImage"];
+    _investorModel = investorModel;
     
-    _nameLabel.text = @"项目名称";
+    [_headImageView sd_setImageWithURL:[NSURL URLWithString:investorModel.head_img]placeholderImage:[UIImage imageNamed:@"Icon_PlaceholderImage"]];
     
-    _comanyNameLabel.text = @"杭州天湾投资管理有限公司（北京分公司）";
+    _nameLabel.text = investorModel.realName;
     
-    _qualeLabel.text = @"董事长";
+    _comanyNameLabel.text = investorModel.organization;
+    
+    _qualeLabel.text = investorModel.iposition;
+    
+    _domainLabel.text = [NSString stringWithFormat:@"投资领域: %@",investorModel.focusTradesName];
+    
+    _sectionLabel.text = [NSString stringWithFormat:@"投资阶段:%@",investorModel.investmentStages];
 }
 
 @end

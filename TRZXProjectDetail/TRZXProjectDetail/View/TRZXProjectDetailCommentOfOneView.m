@@ -8,7 +8,7 @@
 
 #import "TRZXProjectDetailCommentOfOneView.h"
 #import "TRZXProjectDetailMacro.h"
-
+#import "TRZXProjectDetailModel.h"
 
 @implementation TRZXProjectDetailCommentOfOneView
 
@@ -57,6 +57,19 @@
 }
 
 #pragma mark - <Setter/Getter>
+- (void)setModel:(TRZXProjectDetailCommentModel *)model
+{
+    _model = model;
+    
+    [_headImageView sd_setImageWithURL:[NSURL URLWithString:model.commentUserPhoto] placeholderImage:[UIImage imageNamed:@"Icon_PlaceholderImage"] options:SDWebImageRefreshCached|SDWebImageCacheMemoryOnly];
+    
+    _nameLabel.text = model.commentUserName;
+    
+    _sendCommentTimeLabel.text = model.dateInfo;
+    
+    _commentDeatilLabel.text = model.remarks;
+}
+
 - (UIImageView *)headImageView
 {
     if (!_headImageView) {

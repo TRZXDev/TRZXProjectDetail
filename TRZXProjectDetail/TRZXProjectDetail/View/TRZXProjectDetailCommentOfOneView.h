@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+@class TRZXProjectDetailCommentModel;
+
 @interface TRZXProjectDetailCommentOfOneView : UITableViewCell
 
 @property (nonatomic, strong) UIImageView *headImageView;
@@ -17,5 +19,7 @@
 @property (nonatomic, strong) UILabel *sendCommentTimeLabel;
 
 @property (nonatomic, strong) UILabel *commentDeatilLabel;
+
+@property (nonatomic, strong) TRZXProjectDetailCommentModel *model;
 
 @end

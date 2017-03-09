@@ -12,6 +12,6 @@
 
 @interface TRZXProjectDetailOnlyTextTableViewCell : UITableViewCell
 
-@property (nonatomic, strong) TRZXProjectDetailModel *model;
+@property (nonatomic, strong) NSString *textString;
 
 @end

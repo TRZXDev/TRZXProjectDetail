@@ -15,7 +15,7 @@
 
 @property (nonatomic, strong) NSString  *name;
 @property (nonatomic, strong) NSString  *advantage;
-@property (nonatomic, strong) NSString  *namcompanyAbse;
+@property (nonatomic, strong) NSString  *companyAbs;
 @property (nonatomic, strong) NSString  *exchangeName;
 @property (nonatomic, strong) NSString  *authorName;
 @property (nonatomic, strong) NSString  *authorAbs;
@@ -98,10 +98,10 @@
 @property (nonatomic, strong) NSString  *endDate;
 @property (nonatomic, strong) NSString  *startDateStr;
 @property (nonatomic, strong) NSString  *endDateStr;
-@property (nonatomic, assign) NSInteger amount;
+@property (nonatomic, assign) CGFloat   amount;
 @property (nonatomic, assign) CGFloat   valuation;
 @property (nonatomic, strong) NSString  *exitMechanism;
-@property (nonatomic, assign) NSInteger stockPercentage;
+@property (nonatomic, assign) CGFloat   stockPercentage;
 @property (nonatomic, strong) NSArray   *beforeFinancingList;
 @property (nonatomic, strong) NSString  *areaStageId;
 @property (nonatomic, strong) NSString  *areaStageName;

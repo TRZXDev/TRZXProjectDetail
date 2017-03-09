@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@class TRZXProjectDetailModel;
+@class TRZXRecommendCoursez, TRZXRecommendExpertTopic;
 
 @interface TRZXProjectDetailOnLineClassTableViewCell : UITableViewCell
 
-- (void)setModel:(TRZXProjectDetailModel *)model indexPath:(NSIndexPath *)indexPath;
+@property (nonatomic, strong) TRZXRecommendCoursez *coursezModel;
+
+@property (nonatomic, strong) TRZXRecommendExpertTopic *expertTopicModel;
 
 @end

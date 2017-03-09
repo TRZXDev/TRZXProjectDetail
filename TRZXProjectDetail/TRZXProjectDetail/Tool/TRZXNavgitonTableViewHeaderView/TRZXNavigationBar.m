@@ -6,11 +6,15 @@
 //  Copyright © 2017年 TRZX. All rights reserved.
 //
 
-#import "TRZXProjectDetailNavigationBar.h"
-#import "TRZXProjectDetailMacro.h"
+#import "TRZXNavigationBar.h"
+#import <Masonry/Masonry.h>
 
-@interface TRZXProjectDetailNavigationBar()
+@interface TRZXNavigationBar()
 
+/**
+ 标题
+ */
+@property (nonatomic, strong) UILabel *titleLabel;
 /**
  返回按钮
  */
@@ -33,7 +37,7 @@
 
 @end
 
-@implementation TRZXProjectDetailNavigationBar
+@implementation TRZXNavigationBar
 
 
 - (instancetype)init
@@ -57,6 +61,7 @@
     [self addSubview:self.shareButton];
     [self addSubview:self.collectButton];
     [self addSubview:self.bottomLineView];
+    [self addSubview:self.titleLabel];
 }
 
 - (void)layoutFrmeOfSubViews
@@ -83,12 +88,18 @@
         make.centerY.equalTo(_shareButton);
         make.size.mas_equalTo(CGSizeMake(20, 20));
     }];
+    
+    [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.bottom.equalTo(self);
+        make.width.equalTo(self).multipliedBy(0.4);
+        make.height.mas_equalTo(44);
+    }];
 }
 
 - (void)composeButtonClicked:(UIButton *)sender
 {
-    if (self.onProjectDetailActionBlock) {
-        self.onProjectDetailActionBlock(sender.tag);
+    if (self.onNavigationBarActionBlock) {
+        self.onNavigationBarActionBlock(sender.tag);
     }
     if (sender.tag == ENavigationBarAction_Collect) {
         sender.selected = !sender.isSelected;
@@ -96,36 +107,69 @@
 }
 
 #pragma mark - <Public-Method>
-- (void)makeNavigationBarIsShow:(BOOL)isShow
+- (void)makeNavigationBarIsShowWithContentOfsetY:(CGFloat)y
 {
+    CGFloat headerHeight = ([[UIScreen mainScreen] bounds].size.width) * 3 / 4;
     
-    self.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:isShow ? 1 : 0];
+    BOOL isShow = y > (headerHeight - 64);
+    
+    CGFloat minOffset = headerHeight - 64;
+    
+    CGFloat progress = (y / minOffset);
+    
+    self.backgroundColor = [[UIColor whiteColor] colorWithAlphaComponent:progress];
+    
+    _titleLabel.hidden = !isShow;
     
     _bottomLineView.hidden = !isShow;
     
-    _backButton.selected = isShow;
     
-    _shareButton.selected = isShow;
+    [_backButton setTitleColor:isShow ? [UIColor grayColor] : [UIColor whiteColor] forState:UIControlStateNormal];
+
+    UIImage *backNormalImage = [UIImage imageNamed:isShow ? @"Icon_ProjectDetail_Back_Normal_Gray" : @"Icon_ProjectDetail_Back_Normal_White"];
+    [_backButton setImage:backNormalImage forState:UIControlStateNormal];
     
     UIImage *collectionNormalImage = [UIImage imageNamed:isShow ? @"Icon_ProjectDetail_Collection_Normal_Gray" : @"Icon_ProjectDetail_Collection_Normal_White"];
     [_collectButton setImage:collectionNormalImage forState:UIControlStateNormal];
+    
+    UIImage *shareNormalImage = [UIImage imageNamed:isShow ? @"Icon_ProjectDetail_Share_Normal_Gray" : @"Icon_ProjectDetail_Share_Normal_White"];
+    [_shareButton setImage:shareNormalImage forState:UIControlStateNormal];
 }
 
 #pragma mark - <Setter/Getter>
+- (void)setTitle:(NSString *)title
+{
+    _title = title;
+    _titleLabel.text = title;
+}
+
+- (UILabel *)titleLabel
+{
+    if (!_titleLabel) {
+        _titleLabel = [[UILabel alloc] init];
+        _titleLabel.textColor = [UIColor colorWithRed:90 /255.0 green:90 /255.0 blue:90 /255.0 alpha:1];
+        _titleLabel.numberOfLines             = 0;
+        _titleLabel.hidden                    = YES;
+        _titleLabel.textAlignment             = NSTextAlignmentCenter;
+        _titleLabel.adjustsFontSizeToFitWidth = YES;
+        _titleLabel.baselineAdjustment        = UIBaselineAdjustmentAlignCenters;
+    }
+    return _titleLabel;
+}
+
 - (UIButton *)backButton
 {
     if (!_backButton) {
         _backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        [_backButton setImage:[UIImage imageNamed:@"Icon_ProjectDetail_Back_Normal"] forState:UIControlStateNormal];
-        [_backButton setImage:[UIImage imageNamed:@"Icon_ProjectDetail_Back_Selected"] forState:UIControlStateSelected];
+        [_backButton setImage:[UIImage imageNamed:@"Icon_ProjectDetail_Back_Normal_White"] forState:UIControlStateNormal];
         [_backButton setTitleColor:[UIColor whiteColor]  forState:UIControlStateNormal];
-        [_backButton setTitleColor:[UIColor grayColor]  forState:UIControlStateSelected];
         [_backButton setTitle:@"返回" forState:UIControlStateNormal];
         _backButton.titleLabel.font = [UIFont systemFontOfSize:16];
-        _backButton.imageEdgeInsets = UIEdgeInsetsMake(14,8,12,63);
-        _backButton.titleEdgeInsets = UIEdgeInsetsMake(15,0,11,25);
+        _backButton.imageEdgeInsets = UIEdgeInsetsMake(15,8,12,63);
+        _backButton.titleEdgeInsets = UIEdgeInsetsMake(15,0,11,23);
         _backButton.tag = ENavigationBarAction_Back;
         [_backButton addTarget:self action:@selector(composeButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
+        _backButton.hidden = self.backButtonHidden;
 
     }
     return _backButton;
@@ -139,6 +183,7 @@
         [_collectButton setImage:[UIImage imageNamed:@"Icon_ProjectDetail_Collection_Selected"] forState:UIControlStateSelected];
         [_collectButton addTarget:self action:@selector(composeButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
         _collectButton.tag = ENavigationBarAction_Collect;
+        _collectButton.hidden = self.collectButtonHidden;
     }
     return _collectButton;
 }
@@ -147,10 +192,10 @@
 {
     if (!_shareButton) {
         _shareButton = [[UIButton alloc] init];
-        [_shareButton setImage:[UIImage imageNamed:@"Icon_ProjectDetail_Share_Normal"] forState:UIControlStateNormal];
-        [_shareButton setImage:[UIImage imageNamed:@"Icon_ProjectDetail_Share_Selected"] forState:UIControlStateSelected];
+        [_shareButton setImage:[UIImage imageNamed:@"Icon_ProjectDetail_Share_Normal_White"] forState:UIControlStateNormal];
         [_shareButton addTarget:self action:@selector(composeButtonClicked:) forControlEvents:UIControlEventTouchUpInside];
         _shareButton.tag = ENavigationBarAction_Share;
+        _shareButton.hidden = self.shareButtonHidden;
 
     }
     return _shareButton;
@@ -160,10 +205,28 @@
 {
     if (!_bottomLineView) {
         _bottomLineView = [[UIView alloc] init];
-        _bottomLineView.backgroundColor = kTRZXBGrayColor;
+        _bottomLineView.backgroundColor = [UIColor colorWithRed:240.0/255.0 green:239.0/255.0 blue:244.0/255.0 alpha:1];
         _bottomLineView.hidden = YES;
     }
     return _bottomLineView;
+}
+
+- (void)setBackButtonHidden:(BOOL)backButtonHidden
+{
+    _backButtonHidden = backButtonHidden;
+    _backButton.hidden = backButtonHidden;
+}
+
+- (void)setCollectButtonHidden:(BOOL)collectButtonHidden
+{
+    _collectButtonHidden = collectButtonHidden;
+    _collectButton.hidden = collectButtonHidden;
+}
+
+- (void)setShareButtonHidden:(BOOL)shareButtonHidden
+{
+    _shareButtonHidden = shareButtonHidden;
+    _shareButton.hidden = shareButtonHidden;
 }
 
 @end

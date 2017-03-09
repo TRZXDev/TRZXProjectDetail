@@ -10,7 +10,11 @@ target 'TRZXProjectDetail' do
   
   pod 'Masonry'
   pod 'MJExtension'
-  
+  pod 'ZBCellConfig'
+  pod 'SDWebImage'
+  pod 'ReactiveCocoa', '~> 2.5’
+
+
 #  投融在线
   pod 'TRZXKit'
   pod 'TRZXNetwork'

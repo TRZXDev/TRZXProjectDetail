@@ -8,6 +8,7 @@
 
 #import "TRZXProjectDetailTeamTableViewCell.h"
 #import "TRZXProjectDetailMacro.h"
+#import "TRZXProjectDetailDataModel.h"
 
 @interface TRZXProjectDetailTeamTableViewCell()
 
@@ -49,7 +50,7 @@
     [_headImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(64, 64));
         make.top.equalTo(self.contentView).offset(5);
-        make.bottom.equalTo(self.contentView).offset(-5);
+        make.bottom.equalTo(self.contentView).offset(-20);
         make.left.equalTo(self.contentView).offset(15);
     }];
     
@@ -62,14 +63,15 @@
     [_positionLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.bottom.equalTo(_nameLabel);
         make.left.equalTo(_nameLabel.mas_right).offset(12);
+        make.right.equalTo(self.contentView).offset(-10);
     }];
     
-    _describeLabel.numberOfLines = 0;
+    _describeLabel.numberOfLines = 3;
     [_describeLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(_nameLabel);
-        make.bottom.equalTo(_headImageView);
         make.right.equalTo(self.contentView).offset(-10);
         make.top.equalTo(_nameLabel.mas_bottom).offset(10);
+        make.bottom.equalTo(self.contentView).offset(-5);
     }];
     
     [_bottomLineView mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -78,15 +80,17 @@
     }];
 }
 
-- (void)setModel:(TRZXProjectDetailModel *)model indexPath:(NSIndexPath *)indexPath
+- (void)setModel:(TRZXProjectDetailDataTeamModel *)model
 {
-    _headImageView.image = [UIImage imageNamed:@"testIcon_backGroundImage"];
+    _model = model;
     
-    _nameLabel.text = @"组员名称";
+    [_headImageView sd_setImageWithURL:[NSURL URLWithString:model.photo] placeholderImage:[UIImage imageNamed:@"Icon_PlaceholderImage"]];
     
-    _positionLabel.text = @"职位";
+    _nameLabel.text = model.name;
     
-    _describeLabel.text = @"庆历四年春，滕子京谪守巴陵郡。越明年，政通人和，百废具兴。乃重修岳阳楼，增其旧制，刻唐贤今人诗赋于其上。属予作文以记之";
+    _positionLabel.text = model.position;
+    
+    _describeLabel.text = model.abstractz;
 }
 
 #pragma mark - <Setter/Getter>

@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@class TRZXProjectDetailModel;
+@class TRZXRecommendInvestor;
 
 @interface TRZXProjectDetailnvestTableViewCell : UITableViewCell
 
-- (void)setModel:(TRZXProjectDetailModel *)model indexPath:(NSIndexPath *)indexPath;
+@property (nonatomic, strong) TRZXRecommendInvestor *investorModel;
 @end

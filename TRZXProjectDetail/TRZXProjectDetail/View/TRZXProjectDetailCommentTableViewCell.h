@@ -13,4 +13,5 @@
 @interface TRZXProjectDetailCommentTableViewCell : UITableViewCell
 
 @property (nonatomic, strong) TRZXProjectDetailModel *model;
+
 @end

@@ -8,9 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class TRZXProjectDetailModel;
+@class TRZXProjectDetailDataProjectFinancingModel;
 
 @interface TRZXProjectDetailFinancingInfoTableViewCell : UITableViewCell
 
-@property (nonatomic, strong) TRZXProjectDetailModel *model;
+@property (nonatomic, strong) TRZXProjectDetailDataProjectFinancingModel *model;
+
 @end
