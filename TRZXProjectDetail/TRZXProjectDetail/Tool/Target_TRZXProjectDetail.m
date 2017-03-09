@@ -14,7 +14,7 @@
 - (UIViewController *)Action_ProjectDetailViewController:(NSDictionary *)params
 {
     TRZXProjectDetailViewController *projectDetail_vc = [[TRZXProjectDetailViewController alloc] init];
-    projectDetail_vc.projectId = @"projectId";
+    projectDetail_vc.projectId = params[@"projectId"];
     return projectDetail_vc;
 }
 

@@ -35,7 +35,7 @@
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
 {
     Target_TRZXProjectDetail *target = [Target_TRZXProjectDetail new];
-    UIViewController *projectDetail_vc = [target Action_ProjectDetailViewController:nil];
+    UIViewController *projectDetail_vc = [target Action_ProjectDetailViewController:@{@"projectId":@"6b8a7de6e8984200857917237bbdfe1f"}];
     
     [self.navigationController pushViewController:projectDetail_vc animated:YES];
 }

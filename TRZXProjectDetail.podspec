@@ -136,7 +136,7 @@ Pod::Spec.new do |s|
   # s.dependency "BLNetworking"
   # s.dependency "BLAPIManagers"
   # s.dependency "BLAPIManagers"
-  s.dependency "ReactiveCocoa"
+  s.dependency "ReactiveCocoa" ,"~> 2.5"
   s.dependency "SDWebImage"
   s.dependency "ZBCellConfig"
   s.dependency "Masonry"
