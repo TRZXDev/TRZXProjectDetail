@@ -14,4 +14,6 @@
 
 @property (nonatomic, strong) TRZXProjectDetailModel *model;
 
+@property (nonatomic, strong) UITapGestureRecognizer *moreLabelTapGesture;
+
 @end

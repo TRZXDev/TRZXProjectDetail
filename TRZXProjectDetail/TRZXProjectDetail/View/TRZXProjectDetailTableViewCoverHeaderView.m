@@ -20,30 +20,31 @@
 
 @implementation TRZXProjectDetailTableViewCoverHeaderView
 
-- (instancetype)initWithScrollView:(UIScrollView *)scrollView
+- (void)addOwnViews
 {
-    self = [super initWithScrollView:scrollView];
-    if (self) {
-        
-        [self addSubview:self.headImageView];
-        
-        [self addSubview:self.titleLabel];
-        
-        [_headImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.size.mas_equalTo(CGSizeMake(80, 80));
-            make.center.equalTo(self);
-        }];
-        
-        _titleLabel.numberOfLines = 0;
-        [_titleLabel setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
-        [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.width.mas_equalTo(SCREEN_WIDTH * 0.5);
-            make.centerX.equalTo(self);
-            make.top.equalTo(_headImageView.mas_bottom).offset(20);
-        }];
-        
-    }
-    return self;
+    [super addOwnViews];
+    
+    [self addSubview:self.headImageView];
+    
+    [self addSubview:self.titleLabel];
+}
+
+- (void)layoutFrameOfSubViews
+{
+    [super layoutFrameOfSubViews];
+    
+    [_headImageView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.size.mas_equalTo(CGSizeMake(80, 80));
+        make.center.equalTo(self);
+    }];
+    
+    _titleLabel.numberOfLines = 0;
+    [_titleLabel setContentCompressionResistancePriority:UILayoutPriorityRequired forAxis:UILayoutConstraintAxisHorizontal];
+    [_titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(SCREEN_WIDTH * 0.5);
+        make.centerX.equalTo(self);
+        make.top.equalTo(_headImageView.mas_bottom).offset(20);
+    }];
 }
 
 #pragma mark - <Setter/Getter>
@@ -57,7 +58,6 @@
     
     [_headImageView sd_setImageWithURL:[NSURL URLWithString:model.data.logo] placeholderImage:[UIImage imageNamed:@"Icon_PlaceholderImage"]];
 }
-
 
 - (UIImageView *)headImageView
 {

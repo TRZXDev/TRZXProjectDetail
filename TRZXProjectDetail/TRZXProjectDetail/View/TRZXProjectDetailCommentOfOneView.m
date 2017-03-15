@@ -24,17 +24,17 @@
 }
 - (void)addOwnViews
 {
-    [self.contentView addSubview:self.headImageView];
-    [self.contentView addSubview:self.nameLabel];
-    [self.contentView addSubview:self.sendCommentTimeLabel];
-    [self.contentView addSubview:self.commentDeatilLabel];
+    [self addSubview:self.headImageView];
+    [self addSubview:self.nameLabel];
+    [self addSubview:self.sendCommentTimeLabel];
+    [self addSubview:self.commentDeatilLabel];
 }
 
 - (void)layoutFrameOfSubViews
 {
     [_headImageView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.contentView).offset(12);
-        make.top.equalTo(self.contentView).offset(10);
+        make.left.equalTo(self).offset(12);
+        make.top.equalTo(self).offset(10);
         make.size.mas_equalTo(CGSizeMake(32, 32));
     }];
     
@@ -52,7 +52,7 @@
     [_commentDeatilLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(_headImageView);
         make.top.equalTo(_headImageView.mas_bottom).offset(10);
-        make.right.equalTo(self.contentView).offset(-10);
+        make.right.equalTo(self).offset(-10);
     }];
 }
 
@@ -84,7 +84,6 @@
 {
     if (!_nameLabel) {
         _nameLabel = [[UILabel alloc] init];
-        _nameLabel.text = @"评论数";
         _nameLabel.font = [UIFont systemFontOfSize:15];
         _nameLabel.textColor = [UIColor colorWithRed:90 /255.0 green:90 /255.0 blue:90 /255.0 alpha:1];
     }

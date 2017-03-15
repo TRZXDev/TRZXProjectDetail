@@ -1,4 +1,4 @@
-use_frameworks!
+#use_frameworks!
 # Uncomment this line to define a global platform for your project
 platform :ios, '8.0'
 
@@ -19,5 +19,6 @@ target 'TRZXProjectDetail' do
 #  投融在线
   pod 'TRZXKit'
   pod 'TRZXNetwork'
+  pod 'TRZXNavigationTableViewHeaderView'
  
 end

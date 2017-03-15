@@ -29,6 +29,8 @@
 #import "TRZXProjectDetailTitleSectionHeaderView.h"
 #import "TRZXProjectDetailLeftRedTitleSectionHeaderView.h"
 
+#import "TRZXProjectDetailCommentListView.h"
+
 @interface TRZXProjectDetailViewController ()
 <
 UITableViewDelegate,
@@ -84,8 +86,6 @@ UITableViewDataSource
 - (void)addOwnViews
 {
     [self.view addSubview:self.tableView];
-    // 设置header
-    _tableView.tableHeaderView = self.tableViewHeaderView;
 }
 
 - (void)layoutFrameOfSubViews
@@ -93,6 +93,8 @@ UITableViewDataSource
     [_tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(UIEdgeInsetsMake(0, 0, 0, 0));
     }];
+    // 设置header
+    _tableView.tableHeaderView = self.tableViewHeaderView;
 }
 
 - (void)receiveActions
@@ -363,7 +365,15 @@ UITableViewDataSource
         
     }else if ([cellConfig isTitle:@"评论"]) {
         
-        cell = [cellConfig cellOfCellConfigWithTableView:tableView dataModels:@[model]];
+        TRZXProjectDetailCommentTableViewCell *commentCell = (TRZXProjectDetailCommentTableViewCell *)[cellConfig cellOfCellConfigWithTableView:tableView dataModels:@[model]];
+        
+        @weakify(self);
+        [commentCell.moreLabelTapGesture.rac_gestureSignal subscribeNext:^(id x) {
+            @strongify(self);
+            [[TRZXProjectDetailCommentListView sharedCommentList] showCommentList:self.projectDetailVM.projectDetailModel.commentsJson];
+        }];
+        
+        cell = commentCell;
         
     }else if ([cellConfig isTitle:@"在线课程"]) {
         

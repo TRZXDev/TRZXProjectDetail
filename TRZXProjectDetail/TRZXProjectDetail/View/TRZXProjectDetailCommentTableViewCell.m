@@ -23,9 +23,9 @@
 
 @property (nonatomic, strong) UITextField *commentTextField;
 
-@property (nonatomic, strong) TRZXProjectDetailCommentOfOneView *commentOfOneView;
-
 @property (nonatomic, strong) UILabel *moreCommentLable;
+
+@property (nonatomic, strong) TRZXProjectDetailCommentOfOneView *commentOfOneView;
 
 @property (nonatomic, strong) UIView *moreSparateLineView;
 
@@ -212,9 +212,19 @@
         _moreCommentLable.text = @"点击查看更多>";
         _moreCommentLable.textAlignment = NSTextAlignmentRight;
         _moreCommentLable.font = [UIFont systemFontOfSize:12];
+        _moreCommentLable.userInteractionEnabled = YES;
         _moreCommentLable.textColor = [UIColor trzx_RedColor];
+        [_moreCommentLable addGestureRecognizer:self.moreLabelTapGesture];
     }
     return _moreCommentLable;
+}
+
+- (UITapGestureRecognizer *)moreLabelTapGesture
+{
+    if (!_moreLabelTapGesture) {
+        _moreLabelTapGesture = [[UITapGestureRecognizer alloc] init];
+    }
+    return _moreLabelTapGesture;
 }
 
 - (UIView *)moreSparateLineView
