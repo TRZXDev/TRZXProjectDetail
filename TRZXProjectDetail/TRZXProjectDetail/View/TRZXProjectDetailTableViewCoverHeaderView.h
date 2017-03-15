@@ -6,7 +6,7 @@
 //  Copyright © 2017年 TRZX. All rights reserved.
 //
 
-#import "TRZXTableViewCoverHeaderView.h"
+#import <TRZXNavigationTableViewHeaderView/TRZXTableViewCoverHeaderView.h>
 @class TRZXProjectDetailModel;
 
 @interface TRZXProjectDetailTableViewCoverHeaderView : TRZXTableViewCoverHeaderView
