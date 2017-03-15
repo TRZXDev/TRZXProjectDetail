@@ -69,7 +69,7 @@ UITableViewDataSource
     [self dissMiss];
 }
 
-- (void)showCommentList:(NSArray <TRZXProjectDetailCommentModel *> *)commentList
+- (TRZXProjectDetailCommentListView *)showCommentList:(NSArray <TRZXProjectDetailCommentModel *> *)commentList
 {
     self.commentList = commentList;
     
@@ -88,6 +88,8 @@ UITableViewDataSource
     }];
     
     [self.tableView reloadData];
+    
+    return self;
 }
 
 #pragma mark - <UITableViewDelegate/DataSource>

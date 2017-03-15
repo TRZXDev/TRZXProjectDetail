@@ -31,6 +31,8 @@
 
 #import "TRZXProjectDetailCommentListView.h"
 
+#import <TRZXInvestorDetailCategory/CTMediator+TRZXInvestorDetailCategory.h>
+
 @interface TRZXProjectDetailViewController ()
 <
 UITableViewDelegate,
@@ -54,6 +56,11 @@ UITableViewDataSource
  存储 cell
  */
 @property (nonatomic, strong) NSMutableArray <NSArray <ZBCellConfig *> *> *sectionArray;
+
+/**
+ 评论列表
+ */
+@property (nonatomic, strong) TRZXProjectDetailCommentListView *commentListView;
 
 @end
 
@@ -99,11 +106,13 @@ UITableViewDataSource
 
 - (void)receiveActions
 {
-    __weak __typeof(&*self)weakSelf = self;
-    [_tableViewHeaderView setOnNavigationBarActionBlock:^(ENavigationBarAction action) {
+    @weakify(self);
+    [_tableViewHeaderView setOnNavigationBarActionBlock:^(ENavigationBarAction action, UIButton *button) {
+        @strongify(self);
         switch (action) {
             case ENavigationBarAction_Back: {
-                [weakSelf.navigationController popViewControllerAnimated:YES];
+                [self.commentListView dissMiss];
+                [self.navigationController popViewControllerAnimated:YES];
             }
                 break;
             case ENavigationBarAction_Collect: {
@@ -370,7 +379,7 @@ UITableViewDataSource
         @weakify(self);
         [commentCell.moreLabelTapGesture.rac_gestureSignal subscribeNext:^(id x) {
             @strongify(self);
-            [[TRZXProjectDetailCommentListView sharedCommentList] showCommentList:self.projectDetailVM.projectDetailModel.commentsJson];
+            _commentListView = [[TRZXProjectDetailCommentListView sharedCommentList] showCommentList:self.projectDetailVM.projectDetailModel.commentsJson];
         }];
         
         cell = commentCell;
@@ -408,6 +417,22 @@ UITableViewDataSource
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
     return _sectionArray[section].firstObject.sectionHeaderHeight;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    ZBCellConfig *cellConfig = self.sectionArray[indexPath.section][indexPath.row];
+    
+    TRZXRecommendModel *recommedModel = self.projectDetailVM.recommendModel;
+    
+    if ([cellConfig isTitle:@"投资人"]) {
+        NSString *investorId = recommedModel.investorList[indexPath.row].mid;
+        
+        UIViewController *investorDetail_vc = [[CTMediator sharedInstance] investorDetailViewController:investorId];
+        
+        [self.navigationController pushViewController:investorDetail_vc animated:YES];
+    }
+    
 }
 
 #pragma mark - <Setter/Getter>

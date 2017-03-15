@@ -14,7 +14,7 @@
 
 + (TRZXProjectDetailCommentListView *)sharedCommentList;
 
-- (void)showCommentList:(NSArray <TRZXProjectDetailCommentModel *> *)commentList;
+- (TRZXProjectDetailCommentListView *)showCommentList:(NSArray <TRZXProjectDetailCommentModel *> *)commentList;
 
 - (void)dissMiss;
 @end

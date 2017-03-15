@@ -20,5 +20,9 @@ target 'TRZXProjectDetail' do
   pod 'TRZXKit'
   pod 'TRZXNetwork'
   pod 'TRZXNavigationTableViewHeaderView'
+  
+#  投资人详情组件
+  pod 'TRZXInvestorDetail'
+  pod 'TRZXInvestorDetailCategory'
  
 end
