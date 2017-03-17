@@ -29,9 +29,14 @@
 #import "TRZXProjectDetailTitleSectionHeaderView.h"
 #import "TRZXProjectDetailLeftRedTitleSectionHeaderView.h"
 
+/// 评论列表
 #import "TRZXProjectDetailCommentListView.h"
 
+// 投资人详情扩展
 #import <TRZXInvestorDetailCategory/CTMediator+TRZXInvestorDetailCategory.h>
+
+/// 分享
+#import <TRZXShare/TRZXShareManager.h>
 
 @interface TRZXProjectDetailViewController ()
 <
@@ -122,6 +127,25 @@ UITableViewDataSource
                 break;
             case ENavigationBarAction_Share: {
                 NSLog(@"ENavigationBarAction_Share!");
+                
+                NSString *title= @"投融在线-带您走进资本市场";
+                NSString *desc= @"股权融资全过程服务第三方平台，提高融资能力，获取融资渠道！";
+                NSString * link= @"https://www.baidu.com/";
+                
+                
+                OSMessage *msg=[[OSMessage alloc]init];
+                msg.title= title;
+                msg.desc= desc;
+                msg.link= link;
+                msg.image= [UIImage imageNamed:@"icon"];//缩略图
+                
+                
+                [[TRZXShareManager sharedManager]showTRZXShareViewMessage:msg handler:^(TRZXShareType type) {
+                    
+                    NSLog(@">>>>>>>>投融好友");
+                    
+                    
+                }];
             }
                 
                 break;
@@ -379,7 +403,7 @@ UITableViewDataSource
         @weakify(self);
         [commentCell.moreLabelTapGesture.rac_gestureSignal subscribeNext:^(id x) {
             @strongify(self);
-            _commentListView = [[TRZXProjectDetailCommentListView sharedCommentList] showCommentList:self.projectDetailVM.projectDetailModel.commentsJson];
+            [self.commentListView showCommentList:self.projectDetailVM.projectDetailModel.commentsJson];
         }];
         
         cell = commentCell;
@@ -481,5 +505,13 @@ UITableViewDataSource
         _sectionArray = [[NSMutableArray alloc] init];
     }
     return _sectionArray;
+}
+
+- (TRZXProjectDetailCommentListView *)commentListView
+{
+    if (!_commentListView) {
+        _commentListView = [TRZXProjectDetailCommentListView sharedCommentList];
+    }
+    return _commentListView;
 }
 @end

@@ -28,6 +28,9 @@
     [super awakeFromNib];
     // Initialization code
     
+    _headImageView.layer.cornerRadius = 5;
+    _headImageView.clipsToBounds = YES;
+    
     [_headImageView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.contentView).offset(15);
         make.size.mas_equalTo(CGSizeMake(79, 79));

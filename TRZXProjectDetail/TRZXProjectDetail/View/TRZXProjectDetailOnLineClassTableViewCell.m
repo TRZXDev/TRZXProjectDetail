@@ -125,6 +125,9 @@
 {
     if (!_headImageView) {
         _headImageView = [[UIImageView alloc] init];
+        _headImageView.userInteractionEnabled = YES;
+        _headImageView.clipsToBounds = YES;
+        _headImageView.layer.cornerRadius = 5;
     }
     return _headImageView;
 }
