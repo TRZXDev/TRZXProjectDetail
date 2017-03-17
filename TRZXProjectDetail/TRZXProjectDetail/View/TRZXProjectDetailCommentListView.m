@@ -85,9 +85,11 @@ UITableViewDataSource
     
     [UIView animateWithDuration:0.3 animations:^{
         [self setTransform:CGAffineTransformMakeTranslation(0, -SCREEN_HEIGHT + 64)];
+    } completion:^(BOOL finished) {
+        
+        [self.tableView reloadData];
     }];
     
-    [self.tableView reloadData];
     
     return self;
 }
